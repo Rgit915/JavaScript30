@@ -32,3 +32,12 @@ function removeTransition(event) {
 const keys = document.querySelectorAll('.key');
 // Add event listener to each key for transition end
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+window.addEventListener('keyup', function (event) {
+  // Select key element with the corresponding keyCode
+  const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
+  // If key element exists, remove 'playing' class
+  if (key) {
+    key.classList.remove('playing');
+  }
+});
