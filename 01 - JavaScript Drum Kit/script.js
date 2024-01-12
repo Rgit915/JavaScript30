@@ -20,3 +20,11 @@ if (key) {
 }
 }
 
+// Function to remove 'playing' class after the transition ends
+function removeTransition(event) {
+  // Check if the transition property is 'transform'
+  if (event.propertyName === 'transform') {
+    this.classList.remove('playing');
+  }
+}
+
