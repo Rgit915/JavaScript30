@@ -28,3 +28,7 @@ function removeTransition(event) {
   }
 }
 
+// Select all elements with class 'key'
+const keys = document.querySelectorAll('.key');
+// Add event listener to each key for transition end
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
