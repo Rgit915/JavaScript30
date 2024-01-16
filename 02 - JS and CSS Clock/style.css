@@ -1,27 +1,43 @@
 html {
-  background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
-  background-size: cover;
+ margin: 0;
+ padding: 0;
   font-family: 'helvetica neue';
   text-align: center;
   font-size: 10px;
 }
 
+
 body {
   margin: 0;
+  padding: 0;
   font-size: 2rem;
   display: flex;
   flex: 1;
   min-height: 100vh;
   align-items: center;
 }
+.room-clock-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.room-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .clock {
   width: 30rem;
   height: 30rem;
   border: 20px solid white;
+  background-image: url(./sunset.jpg);
   border-radius: 50%;
   margin: 50px auto;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right:3%;
   padding: 2rem;
   box-shadow:
     0 0 0 4px rgba(0, 0, 0, 0.1),
@@ -66,3 +82,15 @@ body {
   border-radius: 50%;
   z-index: 2; /* the z-index to bring it to the front */
 }
+.clock-number {
+  position: absolute;
+  font-size: 3rem;
+  color: black;
+  transform-origin: 50% 50%;
+}
+
+[data-number="12"] { transform: translate(14rem, -1.2rem); }
+[data-number="3"] { transform: translate(29.2rem, 13.4rem); }
+[data-number="6"] { transform: translate(14rem, 28rem); }
+[data-number="9"] { transform: translate(-1rem, 13.4rem); }
+
