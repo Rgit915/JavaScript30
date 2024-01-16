@@ -1,3 +1,21 @@
+    :root{
+      --base: #129912;
+      --spacing: 5px;
+      --blur: 5px;
+
+    }
+    img {
+      background: var(--base);
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+    }
+
+    .h1 {
+      color: var(--base);
+    }
+
+    /* misc styles, nothing to do with css variables */
+
     body {
       text-align: center;
       background: #193549;
