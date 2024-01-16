@@ -32,7 +32,7 @@ body {
   width: 30rem;
   height: 30rem;
   border: 20px solid white;
-  background-image: url(./sunset.jpg);
+  background-image: url(./docs/sunset.jpg);
   border-radius: 50%;
   margin: 50px auto;
   position: absolute;
