@@ -1,5 +1,5 @@
     :root{
-      --base: #129912;
+      --base: #69205a;
       --spacing: 5px;
       --blur: 5px;
 
@@ -10,7 +10,7 @@
       filter: blur(var(--blur));
     }
 
-    .h1 {
+    .hl {
       color: var(--base);
     }
 
