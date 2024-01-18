@@ -15,3 +15,7 @@ function handleUpdate() {
 inputs.forEach(input => {
     input.addEventListener('change', handleUpdate) // call function when input value changes
 });
+
+inputs.forEach(input => {
+  input.addEventListener('mousemove', handleUpdate) // Real-time updates
+});
