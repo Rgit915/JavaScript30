@@ -108,3 +108,16 @@ console.log(sortedByLastname);
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+const instancesCount = data.reduce((accumulator, currentValue) => {
+  // If the current value is not in the accumulator, initialize its count to 1
+  if (!accumulator[currentValue]) {
+    accumulator[currentValue] = 1;
+  } else {
+    // If the current value is already in the accumulator, increment its count
+    accumulator[currentValue]++;
+  }
+  return accumulator;
+}, {});
+
+console.table(instancesCount);
