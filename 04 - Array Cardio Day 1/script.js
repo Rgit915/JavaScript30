@@ -57,6 +57,13 @@ console.table(oldestToYoungest);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+// Calculate the total number of years all the inventors lived together
+const numberOfYears = inventors.reduce((acc, currentValue) => {
+  return acc + (currentValue.passed - currentValue.year);
+}, 0);
+
+// Display the result in the console
+console.log(`All the inventors lived all together for ${numberOfYears} years.`);
 
 // 5. Sort the inventors by years lived
 
