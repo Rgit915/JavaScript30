@@ -81,17 +81,29 @@ console.table(sortedByLived);
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-// Get the element with class 'mw-category'
-const category = document.querySelector('.mw-category');
+// // Get the element with class 'mw-category'
+// const category = document.querySelector('.mw-category');
 
-// Create an array of all <a> elements within the category
-const links = Array.from(category.querySelectorAll('a'));
+// // Create an array of all <a> elements within the category
+// const links = Array.from(category.querySelectorAll('a'));
 
-// Extract the boulevards containing 'de' from the list of links
-const de = links.map(link => link.textContent).filter(boulevards => boulevards.includes('de'));
+// // Extract the boulevards containing 'de' from the list of links
+// const de = links.map(link => link.textContent).filter(boulevards => boulevards.includes('de'));
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+const sortedByLastname = people.sort((a, b) => {
+  // Destructure the names into last and first names
+  const [aLast, aFirst] = a.split(', ');
+  const [bLast, bFirst] = b.split(', ');
+
+  // Compare last names and return a value for sorting
+  return aLast > bLast ? 1 : -1;
+});
+
+// Display the sorted array in the console
+console.log(sortedByLastname);
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
