@@ -5,8 +5,9 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 ## Table of Contents
 
 - [Day 1: Drum Kit](#day-1-drum-kit)
-- [Day 2: JS and CSS Clock](#day-2-JS-CSS-clock)
-- [Day 3: CSS Variables](#day-3-CSS-varibles)
+- [Day 2: JS and CSS Clock](#day-2-JS-and-CSS-Clock)
+- [Day 3: CSS Variables](#day-3-CSS-Variables)
+- [Day 4: Array Cardio Day 1](#day-4-Array-Cardio-Day-1)
 
 ## Day 1: Drum Kit
 
@@ -23,3 +24,7 @@ Description: Dive into time-related functionality with an analog clock that dyna
 
 Description: Discover the dynamic nature of CSS variables as you learn how to update them dynamically using JavaScript.
 ![Screenshot of finished CSS Variables project](https://github.com/Rgit915/JavaScript30/blob/73904010e64ea5a4a0ac81cd3a2aa14ed4a30998/03%20-%20CSS%20Variables/CSS-variables.png)
+
+## Day 4: Array Cardio Day 1
+Description: Welcome to this JavaScript workout designed to strengthen your array manipulation skills. This exercise tackles a variety of challenges using the filter, map, sort, and reduce methods with two arrays: inventors and people.
+![Screenshot of finished Array Cardio exercise](https://github.com/Rgit915/JavaScript30/blob/95aa8d900fd91f42d5194ea2d397b1bff5e45778/04%20-%20Array%20Cardio%20Day%201/Array-cardio2.mp4)
