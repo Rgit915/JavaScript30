@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: antiquewhite;
+}
+
+.container {
+  margin: 30px;
+
+}
+
+.branding-text {
+  left: 72px;
+  top: 26px;
+  position: absolute;
+  color: #18181B;
+  font-size: 16px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.building-text {
+  font-size: 18px;
+  color: #52525B;
+  margin-bottom: 20px;
+}
+
+.challenge-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #18181B;
+  margin-bottom: 20px;
+}
+
+.challenge-title {
+  color: #18181B;
+}
+
+.js-title {
+  color: #33AFAF;
+}
+
+.demo-repo-text {
+  font-size: 16px;
+  color: #71717A;
+}
+
+.image-container {
+  text-align: center;
+}
+
+
+
+/* Footer Styles */
+footer {
+  padding: 50px 70px;
+  background: #3db6b675;
+}
+
+.footer-logo{
+  color: #18181B;
+  font-size: 12px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+  /* Center horizontally */
+  margin-top: 10px;
+}
+
+.copyright img {
+  width: 20px;
+  /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 1px;
+}
+
+/* Media Query for Mobile Responsive Design */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+
+  .branding-text {
+    left: 24px;
+    top: 16px;
+  }
+
+  .building-text {
+    font-size: 16px;
+    margin: 15px;
+  }
+
+  .challenge-text {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .demo-repo-text {
+    font-size: 14px;
+  }
+
+  .frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    padding: 35px 25px;
+  }
+
+
+  .footer-section-left {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .container {
+    padding: 15px;
+  }
+
+  .branding-text {
+    left: 40px;
+    top: 30px;
+    font-size: 20px;
+  }
+
+  .building-text {
+    padding: 10px;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .challenge-text {
+    font-size: 50px;
+    margin: 15px;
+  }
+
+  .frame img {
+    width: 600px;
+    height: 300px;
+    box-shadow: 0px 24px 164px -20px rgba(35.06, 39.59, 105.19, 0.15);
+    border-radius: 20px;
+  }
+}
+
+/* Media Query for Desktop */
+@media only screen and (min-width: 993px) {
+  .text-container {
+    margin-top: 6rem;
+    text-align: center;
+    color: #52525B;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+  }
+
+  .challenge-text {
+    width: 564px;
+    margin: 0 auto;
+    /* Center the element horizontally */
+  }
+
+
+  .challenge-text .challenge-title {
+    color: #18181B;
+    font-size: 52px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    line-height: 62px;
+    word-wrap: break-word;
+  }
+
+  .challenge-text .js-title {
+    color: #33AFAF;
+    font-size: 52px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    line-height: 62px;
+    word-wrap: break-word;
+  }
+
+  .demo-repo-text {
+    color: #71717A;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+
+  .frame img {
+    width: 880px;
+    height: 541px;
+
+    box-shadow: 0px 24px 164px -20px rgba(35.06, 39.59, 105.19, 0.15);
+    border-radius: 20px;
+  }
+
+}
