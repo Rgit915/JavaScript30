@@ -31,3 +31,32 @@ function findMatches(wordToMatch, cities) {
   const regex = new RegExp(wordToMatch, 'gi');
   return cities.filter(place => place.city.match(regex) || place.state.match(regex));
 }
+
+
+//Function to display matching cities and population
+function displayMatches(){
+  //Get matching cities based on the input value
+  const matchArray = findMatches(this.value, cities)
+
+  //Generate HTML for matching cities
+ const html = matchArray.map((place) => {
+  return `<li>
+  <span class="name">${place.city}, ${place.state}</span>
+  <span class="population">${place.population}</span>`;
+ })
+
+ //Display the generated HTML in the suggestions container
+ suggestions.innerHTML = html;
+}
+
+// Select the HTML element with the class 'search' and store it in the searchInput variable.
+const searchInput = document.querySelector('.search');
+
+// Select the HTML element with the class 'suggestions' and store it in the suggestions variable.
+const suggestions = document.querySelector('.suggestions');
+
+
+//Event listener for input changes to trigger displayMatches
+searchInput.addEventListener('input', displayMatches);
+
+
