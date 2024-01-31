@@ -18,8 +18,7 @@ fetch(citiesAPI)
   .then(data => {
     // Process the fetched data and store it in the cities array
     cities.push(...data);
-    // Log the populated cities array
-    console.log(cities);
+    
   })
   .catch(error => {
     // Handle errors during the fetch operation
@@ -32,6 +31,10 @@ function findMatches(wordToMatch, cities) {
   return cities.filter(place => place.city.match(regex) || place.state.match(regex));
 }
 
+//Function to add commas to a number for better readability
+function numberWithCommas(num) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
 
 //Function to display matching cities and population
 function displayMatches(){
@@ -46,7 +49,7 @@ function displayMatches(){
   return `
   <li>
   <span class="name">${cityName}, ${stateName}</span>
-  <span class="population">${place.population}</span>
+  <span class="population">${numberWithCommas(place.population)}</span>
   </li>
   `;
  }).join('');
