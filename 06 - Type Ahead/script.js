@@ -25,3 +25,9 @@ fetch(citiesAPI)
     // Handle errors during the fetch operation
     console.error('Error fetching data:', error);
   });
+
+// Function to filter cities based on the search term
+function findMatches(wordToMatch, cities) {
+  const regex = new RegExp(wordToMatch, 'gi');
+  return cities.filter(place => place.city.match(regex) || place.state.match(regex));
+}
