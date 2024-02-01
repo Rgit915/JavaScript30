@@ -9,6 +9,8 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 3: CSS Variables](#day-3-css-variables)
 - [Day 4: Array Cardio Day 1](#day-4-array-cardio-day-1)
 - [Day 5: Flex Panel Gallery](#day-5-flex-panel-gallery)
+- [Day 6: Type Ahead](#day-6-type-ahead)
+
 ## Day 1: Drum Kit
 
 **Description:** Build a virtual drum kit that plays different sounds for each key press.
@@ -35,3 +37,8 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 **Description:** This project implements a Flex Panel Gallery, showcasing a set of panels with dynamic transitions and interactivity. Each panel expands and reveals its content when clicked, creating a visually appealing gallery experience.
 
 ![Screenshot of finished Flex Panel Gallery project](https://github.com/Rgit915/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/docs/flex-panel-gallery.png)
+
+## Day 6: Type Ahead
+**Description:** This project implements real-time searching of cities and states in the USA using API data. Users can enter the name of a city or state, and the application dynamically filters and displays matching results as the user types.
+
+![Screenshot of Type Ahead project](https://github.com/Rgit915/JavaScript30/blob/master/06%20-%20Type%20Ahead/type-ahead.png)
