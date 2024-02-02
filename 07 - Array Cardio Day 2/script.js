@@ -29,3 +29,11 @@ const isAdult = people.some((person) => currentYear - person.year >= 19);
 
 // Log the result to the console
 console.log("Is at least one person 19 or older? ", isAdult);
+
+// Array.prototype.every() // is everyone 19 or older?
+// Use the every method to check if everyone is 19 years old or older
+const allAdult = people.every((person) => currentYear - person.year >= 19);
+
+// Log the result to the console
+console.log("Is everyone 19 or older? ", allAdult);
+
