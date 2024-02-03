@@ -10,6 +10,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 4: Array Cardio Day 1](#day-4-array-cardio-day-1)
 - [Day 5: Flex Panel Gallery](#day-5-flex-panel-gallery)
 - [Day 6: Type Ahead](#day-6-type-ahead)
+- [Day 7: Array Cardio Day 2](#day-7-array-cardio-day-2)
 
 ## Day 1: Drum Kit
 
@@ -42,3 +43,9 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 **Description:** This project implements real-time searching of cities and states in the USA using API data. Users can enter the name of a city or state, and the application dynamically filters and displays matching results as the user types.
 
 ![Screenshot of Type Ahead project](https://github.com/Rgit915/JavaScript30/blob/master/06%20-%20Type%20Ahead/type-ahead.png)
+
+## Day 7: Array Cardio Day 2
+**Description:** Array methods like some, every, find, and findIndex provide powerful tools for working with arrays in JavaScript, enabling you to efficiently search for and manipulate array elements based on specified conditions.
+
+![Screenshot of Array Cardio day2](https://github.com/Rgit915/JavaScript30/blob/master/07%20-%20Array%20Cardio%20Day%202/Array-cardio-day2.png)
+
