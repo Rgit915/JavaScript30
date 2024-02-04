@@ -13,6 +13,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 100;
+ctx.globalCompositeOperation = 'multiply'; // Set the global composite operation to 'multiply' for blending colors
 
 // Initialize variables for tracking drawing state, last position, and hue for color variation
 let isDrawing = false;
