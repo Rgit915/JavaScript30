@@ -26,7 +26,16 @@ function draw(e){
   // Log the mouse event for debugging purposes
   console.log(e);
 
-  
+  // Begin a new path and move to the last recorded position
+  ctx.beginPath();
+  ctx.moveTo(lastX, lastY);
+
+  // Draw a line to the current mouse position and stroke the path
+  ctx.lineTo(e.offsetX, e.offsetY);
+  ctx.stroke();
+
+  // Update the last position with the current mouse position
+  [lastX, lastY] = [e.offsetX, e.offsetY];
 }
 
 // Event listeners for mouse movements and interactions
