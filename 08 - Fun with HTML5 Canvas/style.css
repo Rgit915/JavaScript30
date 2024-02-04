@@ -1,3 +1,30 @@
 html, body {
   margin: 0;
 }
+body {
+
+  padding: 0; /* Remove default body padding */
+}
+
+canvas {
+  display: block;
+  margin: 20px; /* Add margin to the canvas */
+  border: 2px solid #000; /* Add border to the canvas */
+  border-radius: 30px;
+}
+
+.welcome-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+
+
+}
+h2 {
+  display: inline-block;
+  padding: 10px;
+    color: transparent; /* Set text color to transparent */
+    text-shadow: 1px 1px 20px #ff8a00, 14px 4px 2px #da1b60;
+}
