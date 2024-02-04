@@ -11,6 +11,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 5: Flex Panel Gallery](#day-5-flex-panel-gallery)
 - [Day 6: Type Ahead](#day-6-type-ahead)
 - [Day 7: Array Cardio Day 2](#day-7-array-cardio-day-2)
+- [Day 8: Fun with HTML5 Canvas](#day-8-fun-with-html5-canvas)
 
 ## Day 1: Drum Kit
 
@@ -49,3 +50,9 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 
 ![Screenshot of Array Cardio day2](https://github.com/Rgit915/JavaScript30/blob/master/07%20-%20Array%20Cardio%20Day%202/Array-cardio-day2.png)
 
+## Day 8: Fun with HTML5 Canvas
+
+**Description:**
+Explore the exciting world of HTML5 Canvas as you engage in creative drawing and design. Dive into interactive and dynamic graphics with this project, discovering the possibilities of visual expression on the web.
+
+![Screenshot of HTML5 Canvas](https://github.com/Rgit915/JavaScript30/blob/master/08%20-%20Fun%20with%20HTML5%20Canvas/HTML5-Canvas.png)
