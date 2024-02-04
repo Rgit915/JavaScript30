@@ -12,6 +12,7 @@ canvas.height = window.innerHeight;
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
+ctx.lineWidth   =  100;
 
 // Initialize variables for tracking drawing state and last position
 let isDrawing = false;
@@ -40,6 +41,11 @@ function draw(e){
 
 // Event listeners for mouse movements and interactions
 canvas.addEventListener('mousemove', draw);
-canvas.addEventListener('mousedown', () => isDrawing = true);
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true;
+
+  // Update the last position with the current mouse position
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+} );
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
