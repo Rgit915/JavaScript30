@@ -19,6 +19,8 @@ let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 let hue = 0;
+let direction = true;  // Control the direction of line width change based on a threshold
+
 
 // Function to handle the drawing process
 function draw(e) {
@@ -30,7 +32,7 @@ function draw(e) {
 
   // Update stroke style and line width based on hue for color variation
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
-  ctx.lineWidth = hue;
+
 
   // Begin a new path and move to the last recorded position
   ctx.beginPath();
@@ -48,6 +50,19 @@ function draw(e) {
   if (hue >= 360) {
     hue = 0;
   }
+
+// If the line width reaches the upper or lower limit, reverse the direction
+if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+  direction = !direction;
+}
+
+// Adjust the line width based on the current direction
+if (direction) {
+  ctx.lineWidth++;
+} else {
+  ctx.lineWidth--;
+}
+
 }
 
 // Event listeners for mouse movements and interactions
