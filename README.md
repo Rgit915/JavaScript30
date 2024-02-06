@@ -12,6 +12,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 6: Type Ahead](#day-6-type-ahead)
 - [Day 7: Array Cardio Day 2](#day-7-array-cardio-day-2)
 - [Day 8: Fun with HTML5 Canvas](#day-8-fun-with-html5-canvas)
+- [Day 9: Dev Tools Domination](#day-9-dev-tools-domination)
 
 ## Day 1: Drum Kit
 
@@ -62,4 +63,4 @@ Explore the exciting world of HTML5 Canvas as you engage in creative drawing and
 **Description:**
 Highlighting essential developer tools tricks: logging text, interpolated values, styled output, warnings, errors, information, testing assertions, clearing console, viewing DOM elements, grouping logs, counting, and timing data fetching.
 
-![Screenshot of Dev Tools](https://github.com/Rgit915/JavaScript30/blob/master/09%20-%Dev%20Tools%20Domination/must-know-developer-tool.png)
+![Screenshot of Dev Tools](https://github.com/Rgit915/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination/must-know-developer-tool.png)
