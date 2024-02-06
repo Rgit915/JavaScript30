@@ -71,4 +71,4 @@ Highlighting essential developer tools tricks: logging text, interpolated values
 
 **Description:**
 This project showcases a simulation of an inbox layout commonly found in email clients. The primary feature involves checkbox interactions: when a user clicks a checkbox, holds the Shift key, and clicks another checkbox further down the list, all checkboxes in between the two clicked checkboxes become checked. The implementation is achieved using plain JavaScript, avoiding the use of any external libraries. The project encourages users to explore and experience fundamental features of Vanilla JavaScript while interacting with a familiar inbox-style layout.
-![Screenshot of Checkboxes list](https://github.com/Rgit915/JavaScript30/blob/master/10%20-%20JS%20-%20code/hold-shift-checkboxes.jpg)
+![Screenshot of Checkboxes list](https://github.com/Rgit915/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/hold-shift-checkboxes.png)
