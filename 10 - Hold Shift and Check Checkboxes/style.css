@@ -1,7 +1,8 @@
 
 html {
   font-family: sans-serif;
-  background: #ffc600;
+  background: linear-gradient(to right, #ffcc005a, #c6ddf1, #ff99cc, #c6ddf1, #cb66df, #c6ddf1, #9b75e3);
+ 
 }
 
 .inbox {
