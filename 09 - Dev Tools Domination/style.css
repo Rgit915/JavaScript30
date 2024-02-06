@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(to right, #ffcc005a, #c6ddf1, #ff99cc, #c6ddf1, #cb66df, #c6ddf1, #9b75e3);
+  margin: 10px;
+  padding: 10px;
+  height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  align-content: center;
+ }
+
+ header{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 30px;
+  font-weight: 600;
+ }
+
+ .wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+
+
+ }
+
+.trick-container {
+  margin-bottom: 20px;
+  height: 80%;
+  width: 70%;
+}
+
+.trick-content {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  user-select: none;
+  margin-bottom: 20px;
+}
