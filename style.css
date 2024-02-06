@@ -1,13 +1,107 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: antiquewhite;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: whitesmoke;
+  color: #18181B;
+  min-height: 100vh;
+  text-align: center;
+}
+
+main {
+  padding: 50px 20px;
 }
 
 .container {
   margin: 30px;
 
+}
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.project-item {
+  height: 94%;
+  margin: 3% 1%;
+  width: 96%;
+}
+
+.card {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  height: 100%;
+  transition: all 0.2s ease-in;
+  width: 100%;
+}
+
+.card:hover {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+.card .image-box {
+  align-self: start;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  justify-self: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card .image-box img {
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
+  /* Standard property for compatibility */
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.card:hover .image-box img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card .card-body {
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+}
+
+
+footer {
+  align-self: end;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .branding-text {
@@ -59,15 +153,7 @@ body {
   text-align: center;
 }
 
-
-
-/* Footer Styles */
-footer {
-  padding: 50px 70px;
-  background: #3db6b675;
-}
-
-.footer-logo{
+.footer-logo {
   color: #18181B;
   font-size: 12px;
   font-family: Plus Jakarta Sans;
@@ -129,6 +215,7 @@ footer {
 
   footer {
     padding: 35px 25px;
+    font-size: 5px;
   }
 
 
