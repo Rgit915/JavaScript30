@@ -33,7 +33,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 ## Day 4: Array Cardio Day 1
 **Description:** Welcome to this JavaScript workout designed to strengthen your array manipulation skills. This exercise tackles a variety of challenges using the filter, map, sort, and reduce methods with two arrays: inventors and people.
 
-![Screenshot of finished Array Cardio exercise](https://github.com/Rgit915/JavaScript30/blob/95aa8d900fd91f42d5194ea2d397b1bff5e45778/04%20-%20Array%20Cardio%20Day%201/Array-cardio2.mp4)
+![Screenshot of finished Array Cardio exercise](https://github.com/Rgit915/JavaScript30/blob/master/07%20-%20Array%20Cardio%20Day%202/Array-cardio-day2.png)
 
 ## Day 5: Flex Panel Gallery
 **Description:** This project implements a Flex Panel Gallery, showcasing a set of panels with dynamic transitions and interactivity. Each panel expands and reveals its content when clicked, creating a visually appealing gallery experience.
@@ -56,3 +56,10 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 Explore the exciting world of HTML5 Canvas as you engage in creative drawing and design. Dive into interactive and dynamic graphics with this project, discovering the possibilities of visual expression on the web.
 
 ![Screenshot of HTML5 Canvas](https://github.com/Rgit915/JavaScript30/blob/master/08%20-%20Fun%20with%20HTML5%20Canvas/HTML5-Canvas.png)
+
+## Day 9: Dev Tools Domination
+
+**Description:**
+Highlighting essential developer tools tricks: logging text, interpolated values, styled output, warnings, errors, information, testing assertions, clearing console, viewing DOM elements, grouping logs, counting, and timing data fetching.
+
+![Screenshot of Dev Tools](https://github.com/Rgit915/JavaScript30/blob/master/09%20-%Dev%20Tools%20Domination/must-know-developer-tool.png)
