@@ -13,6 +13,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 7: Array Cardio Day 2](#day-7-array-cardio-day-2)
 - [Day 8: Fun with HTML5 Canvas](#day-8-fun-with-html5-canvas)
 - [Day 9: Dev Tools Domination](#day-9-dev-tools-domination)
+- [Day 10: Hold Shift and Check Checkboxes](#day-10-hold-shift-and-check-checkboxes)
 
 ## Day 1: Drum Kit
 
@@ -64,3 +65,10 @@ Explore the exciting world of HTML5 Canvas as you engage in creative drawing and
 Highlighting essential developer tools tricks: logging text, interpolated values, styled output, warnings, errors, information, testing assertions, clearing console, viewing DOM elements, grouping logs, counting, and timing data fetching.
 
 ![Screenshot of Dev Tools](https://github.com/Rgit915/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination/must-know-developer-tool.png)
+
+
+## Day 10: Hold Shift and Check Checkboxes
+
+**Description:**
+This project showcases a simulation of an inbox layout commonly found in email clients. The primary feature involves checkbox interactions: when a user clicks a checkbox, holds the Shift key, and clicks another checkbox further down the list, all checkboxes in between the two clicked checkboxes become checked. The implementation is achieved using plain JavaScript, avoiding the use of any external libraries. The project encourages users to explore and experience fundamental features of Vanilla JavaScript while interacting with a familiar inbox-style layout.
+![Screenshot of Checkboxes list](https://github.com/Rgit915/JavaScript30/blob/master/10%20-%20JS%20-%20code/hold-shift-checkboxes.jpg)
