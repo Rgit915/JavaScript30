@@ -29,6 +29,14 @@ console.log(this.dataset.skip);
 video.currentTime += parseFloat(this.dataset.skip);
 }
 
+// Function to update the video element properties based on input range changes
+function handleRangeUpdate() {
+  // 'this' refers to the input range element
+  // Update the corresponding property on the video element with the current value
+  video[this.name] = this.value;
+}
+
+
 // Event listeners to toggle play/pause on video click and update button icon
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton); // Update button on video play
@@ -36,3 +44,6 @@ video.addEventListener('pause', updateButton); // Update button on video pause
 
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click', skip));
+
+// Event listeners to call handleRangeUpdate when input range elements change
+ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
