@@ -41,7 +41,13 @@ function handleProgress() {
   // Set the flexBasis style of the progress bar to reflect the percentage
   progressBar.style.flexBasis = `${percent}%`;
 }
-
+// Function to update video playback time based on user scrubbing the progress bar
+function scrub(e) {
+  // Calculate the scrub time based on the mouse position relative to the progress bar
+  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+  // Set the video's current time to the calculated scrub time
+  video.currentTime = scrubTime;
+}
 
 // Event listeners to toggle play/pause on video click and update button icon
 video.addEventListener('click', togglePlay);
@@ -54,3 +60,12 @@ skipButtons.forEach(button => button.addEventListener('click', skip));
 
 // Event listeners to call handleRangeUpdate when input range elements change
 ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+
+// Variable to track whether the mouse button is pressed
+let mousedown = false;
+
+// Event listeners for scrubbing functionality
+progress.addEventListener('click', scrub); // Scrub on click
+progress.addEventListener('mousemove', (e) => mousedown && scrub(e)); // Scrub on mousemove if mousedown
+progress.addEventListener('mousedown', () => mousedown = true); // Set mousedown to true on mouse down
+progress.addEventListener('mouseup', () => mousedown = false); // Set mousedown to false on mouse up
