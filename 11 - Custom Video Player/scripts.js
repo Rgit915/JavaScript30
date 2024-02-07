@@ -4,7 +4,7 @@ const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
-const skipButtons = player.querySelector('[data-skip]');
+const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
 // Function to toggle play/pause of the video
@@ -22,8 +22,17 @@ function updateButton() {
   toggle.textContent = icon;
 }
 
+// Function to skip the video
+function skip(){
+  console.log("skip");
+console.log(this.dataset.skip);
+video.currentTime += parseFloat(this.dataset.skip);
+}
+
 // Event listeners to toggle play/pause on video click and update button icon
-video.addEventListener('click', togglePlay);  
+video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton); // Update button on video play
 video.addEventListener('pause', updateButton); // Update button on video pause
+
 toggle.addEventListener('click', togglePlay);
+skipButtons.forEach(button => button.addEventListener('click', skip));
