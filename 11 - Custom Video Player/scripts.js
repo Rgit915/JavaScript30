@@ -24,8 +24,6 @@ function updateButton() {
 
 // Function to skip the video
 function skip(){
-  console.log("skip");
-console.log(this.dataset.skip);
 video.currentTime += parseFloat(this.dataset.skip);
 }
 
@@ -36,11 +34,20 @@ function handleRangeUpdate() {
   video[this.name] = this.value;
 }
 
+// Function to update the progress bar based on video playback progress
+function handleProgress() {
+  // Calculate the percentage of video playback completion
+  const percent = (video.currentTime / video.duration) * 100;
+  // Set the flexBasis style of the progress bar to reflect the percentage
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
 
 // Event listeners to toggle play/pause on video click and update button icon
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton); // Update button on video play
 video.addEventListener('pause', updateButton); // Update button on video pause
+video.addEventListener('timeupdate', handleProgress); //update the progress bar during video playback
 
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click', skip));
