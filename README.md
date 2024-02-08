@@ -79,7 +79,7 @@ This project showcases a simulation of an inbox layout commonly found in email c
 
 **Description:**
 Explore custom video player, created from scratch with only HTML, CSS, and JavaScript – no external libraries or frameworks.
-custom video player offers essential features such as custom controls, seamless playback options, a progress bar, skip buttons for effortless navigation, and interactive volume/playback rate sliders.
+custom video player offers essential features such as custom controls, seamless playback options, a progress bar, skip buttons for effortless navigation, and interactive volume/playback rate sliders.Experience an immersive view with fullscreen mode. 
 
 ![Screenshot of Custom video player](https://github.com/Rgit915/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/custom-video-player.png)
 
