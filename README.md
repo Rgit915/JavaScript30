@@ -15,6 +15,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 9: Dev Tools Domination](#day-9-dev-tools-domination)
 - [Day 10: Hold Shift and Check Checkboxes](#day-10-hold-shift-and-check-checkboxes)
 - [Day 11: Custom Video Player](#day-11-custom-video-player)
+- [Day 12: Key Sequence Detection( KONAMI CODE)](#day-12-key-sequence-detection)
 
 ## Day 1: Drum Kit
 
@@ -79,7 +80,14 @@ This project showcases a simulation of an inbox layout commonly found in email c
 
 **Description:**
 Explore custom video player, created from scratch with only HTML, CSS, and JavaScript – no external libraries or frameworks.
-custom video player offers essential features such as custom controls, seamless playback options, a progress bar, skip buttons for effortless navigation, and interactive volume/playback rate sliders.Experience an immersive view with fullscreen mode. 
+custom video player offers essential features such as custom controls, seamless playback options, a progress bar, skip buttons for effortless navigation, and interactive volume/playback rate sliders.Experience an immersive view with fullscreen mode.
 
 ![Screenshot of Custom video player](https://github.com/Rgit915/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/custom-video-player.png)
 
+
+## Day 12: Key Sequence Detection
+
+**Description:**
+Embark on an exploration of key sequence detection on Day 12, delving into the creation of interactive experiences through specific keyboard inputs. Uncover the magic of JavaScript as you craft a key sequence detector, enabling users to  to unlock delightful surprises with a sequence of keys. Making each keystroke an opportunity for unexpected discoveries on this exciting coding journey.
+
+![Screenshot of Key sequence detection](https://github.com/Rgit915/JavaScript30/blob/master/12%20-%20Key%20Sequence%20Detection/key-sequence-detection.png)
