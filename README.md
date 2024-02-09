@@ -112,4 +112,4 @@ The examples cover copying arrays using various methods to create copies, emphas
 
 For better interactivity, users can copy and try the provided code snippets on the console. Additionally, a script is included to facilitate running the examples, enhancing the learning experience.
 
-![Screenshot of JS References ](https://github.com/Rgit915/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copy/JS-Reference.png)
+![Screenshot of JS References ](https://github.com/Rgit915/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copying/JS-Reference.png)
