@@ -9,8 +9,6 @@
   <!-- Include Prism.js for syntax highlighting -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 
-  <!-- Include custom script for copying code to clipboard -->
-  <script src="./copyCode.js"></script>
 
 </head>
 
@@ -109,7 +107,41 @@
       For a deep copy, consider using external libraries like lodash's cloneDeep.
     </p>
   </div>
+  <div class="code-container">
+    <h2> Copying Objects</h2>
+    <pre class="language-javascript">
+      <code id="objectCode">
+        // With Objects
+        const person = {
+          name: 'Wes Bos',
+          age: 80
+        };
+
+        // Method 1: Using Object.assign() to create a copy (reference)
+        const personCopy1 = Object.assign({}, person);
+        personCopy1.age = 30;
+        console.log(person, personCopy1);
+
+        // Method 2: Using the spread operator (...) to create a copy (reference)
+        const personCopy2 = { ...person };
+        personCopy2.age = 25;
+        console.log(person, personCopy2);
+      </code>
+    </pre>
+    <button class="copy-button" onclick="copyCode('objectCode')">Copy Code</button>
+  </div>
+  <p class="explanation">
+    Objects can be copied using methods like Object.assign() or the spread operator (...).<br/>
+    Method 1 (Object.assign()): Creates a new object by copying properties from the original object.<br/>
+    Method 2 (Spread Operator): Creates a new object with the same properties as the original object.
+    Modifying the copied object doesn't affect the original object.
+  </p>
+</div>
+
   <script src="script.js"></script>
+  <!-- Include custom script for copying code to clipboard -->
+  <script src="./copyCode.js"></script>
+
 </body>
 
 </html>
