@@ -16,6 +16,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 10: Hold Shift and Check Checkboxes](#day-10-hold-shift-and-check-checkboxes)
 - [Day 11: Custom Video Player](#day-11-custom-video-player)
 - [Day 12: Key Sequence Detection( KONAMI CODE)](#day-12-key-sequence-detection)
+- [Day 13: Slide in on Scroll](#day-13-slide-in-on-scroll)
 
 ## Day 1: Drum Kit
 
@@ -91,3 +92,11 @@ custom video player offers essential features such as custom controls, seamless 
 Embark on an exploration of key sequence detection on Day 12, delving into the creation of interactive experiences through specific keyboard inputs. Uncover the magic of JavaScript as you craft a key sequence detector, enabling users to  to unlock delightful surprises with a sequence of keys. Making each keystroke an opportunity for unexpected discoveries on this exciting coding journey.
 
 ![Screenshot of Key sequence detection](https://github.com/Rgit915/JavaScript30/blob/master/12%20-%20Key%20Sequence%20Detection/key-sequence-detection.png)
+
+
+## Day 13: Slide in on Scroll
+
+**Description:**
+On Day 13, we implemented a "Slide in on Scroll" effect using HTML, CSS, and JavaScript. The main goal was to create a visually appealing presentation of content as the user scrolls down the webpage. The key features of this implementation include dynamically revealing images and paragraphs by adding a slide-in animation when they come into view during scrolling.
+
+![Screenshot of Slide in on Scroll](https://github.com/Rgit915/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/scroll-slide-in.png)
