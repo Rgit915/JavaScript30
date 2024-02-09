@@ -17,6 +17,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 11: Custom Video Player](#day-11-custom-video-player)
 - [Day 12: Key Sequence Detection( KONAMI CODE)](#day-12-key-sequence-detection)
 - [Day 13: Slide in on Scroll](#day-13-slide-in-on-scroll)
+- [Day 14: JavaScript References VS Copy](#day-14-javascript-references-vs-copy)
 
 ## Day 1: Drum Kit
 
@@ -100,3 +101,15 @@ Embark on an exploration of key sequence detection on Day 12, delving into the c
 On Day 13, we implemented a "Slide in on Scroll" effect using HTML, CSS, and JavaScript. The main goal was to create a visually appealing presentation of content as the user scrolls down the webpage. The key features of this implementation include dynamically revealing images and paragraphs by adding a slide-in animation when they come into view during scrolling.
 
 ![Screenshot of Slide in on Scroll](https://github.com/Rgit915/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/scroll-slide-in.png)
+
+
+## Day 14: JavaScript References VS Copy
+
+**Description:**
+Understanding how JavaScript handles references and copies of data types, including strings, numbers, booleans, arrays, and objects, is fundamental for effective programming. This project provides interactive code snippets that illustrate how copying operations behave differently for each basic data type.
+
+The examples cover copying arrays using various methods to create copies, emphasizing the importance of avoiding unintentional modifications to the original array. The exploration extends to object copying techniques using Object.assign() and the modern spread operator. Shallow copying nuances are discussed, emphasizing the need for caution when dealing with nested structures.
+
+For better interactivity, users can copy and try the provided code snippets on the console. Additionally, a script is included to facilitate running the examples, enhancing the learning experience.
+
+![Screenshot of JS References ](https://github.com/Rgit915/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copy/JS-Reference.png)
