@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Reference VS Copy</title>
+  <link rel="icon" href="https://fav.farm/✨" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Prism.js for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+  <!-- Include custom script for copying code to clipboard -->
+  <script src="./copyCode.js"></script>
+
+</head>
+
+<body>
+
+  <h1>JavaScript Reference VS Copy </h1>
+  <div class="JavaScript">
+    <p class="explanation">
+      Strings, numbers, and booleans are basic data types. Here's a brief explanation:
+    </p>
+
+    <div class="code-container">
+      <h2> Strings</h2>
+      <pre class="language-javascript">
+        <code id="stringCode">
+        <!-- Strings -->
+        const originalString = 'Hello, world!';
+        const copiedString = originalString.slice();
+        console.log(originalString, copiedString); // 'Hello, world!' 'Hello, world!'
+
+      </code>
+      </pre>
+      <button class="copy-button" onclick="copyCode('stringCode')">Copy Code</button>
+    </div>
+  </div>
+  <p class="explanation"> Strings are copied using methods like slice(). Modifying the copied string doesn't affect the
+    original string.</p>
+  <div class="code-container">
+    <h2> Numbers</h2>
+    <pre class="language-javascript">
+      <code id="numberCode">
+      <!-- Numbers -->
+      const originalNumber = 42;
+      const copiedNumber = originalNumber;
+      console.log(originalNumber, copiedNumber); // 42 42
+
+    </code>
+    </pre>
+    <button class="copy-button" onclick="copyCode('numberCode')">Copy Code</button>
+  </div>
+  <p class="explanation"> Numbers are copied by direct assignment (=). Modifying the copied number affects the original
+    number.</p>
+  <div class="code-container">
+    <h2> Boolean</h2>
+    <pre class="language-javascript">
+      <code id="booleanCode">
+      <!-- Boolean -->
+      const originalBoolean = true;
+      const copiedBoolean = originalBoolean;
+      console.log(originalBoolean, copiedBoolean); // true true
+    </code>
+    </pre>
+    <button class="copy-button" onclick="copyCode('booleanCode')">Copy Code</button>
+  </div>
+  <p class="explanation"> Booleans are copied by direct assignment (=). Modifying the copied boolean affects the
+    original boolean.</p>
+
+  <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
