@@ -67,11 +67,49 @@
   </div>
   <p class="explanation"> Booleans are copied by direct assignment (=). Modifying the copied boolean affects the
     original boolean.</p>
+  <div class="code-container">
+    <h2> Copying Arrays</h2>
+    <pre class="language-javascript">
+      <code id="arrayCode">
+        <!-- Your array copying code goes here -->
+       // Let's say we have an array
+        const players1 = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
+        // Method 1: Using slice() to create a copy (reference)
+        const playersCopy1 = players1.slice();
+        playersCopy1.push('NewPlayer1');
+        console.log(players1, playersCopy1);
+
+        // Method 2: Using concat() to create a copy (reference)
+        const players2 = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+        const playersCopy2 = [].concat(players2);
+        playersCopy2.push('NewPlayer2');
+        console.log(players2, playersCopy2);
+
+        // Method 3: Using the spread operator (...) to create a copy (reference)
+        const players3 = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+        const playersCopy3 = [...players3];
+        playersCopy3.push('NewPlayer3');
+        console.log(players3, playersCopy3);
+
+
+      </code>
+    </pre>
+    <button class="copy-button" onclick="copyCode('arrayCode')">Copy Code</button>
+  </div>
+  <div class="explanation">
+    <p>
+      Each method creates a reference to the original array, not an independent copy.
+      Therefore, modifying the copy also affects the original array.
+    </p>
+    <p>
+      <strong>Conclusion:</strong>
+      It's important to be aware that these methods result in shallow copies, meaning they only go one level deep.
+      If the array contains nested objects, modifying the nested objects within the copy will affect the original array.
+      For a deep copy, consider using external libraries like lodash's cloneDeep.
+    </p>
+  </div>
   <script src="script.js"></script>
-
-
-
 </body>
 
 </html>
