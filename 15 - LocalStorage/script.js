@@ -22,11 +22,24 @@ function addItem(e){
   // Add the new item to the items array
   items.push(item);
 
-  // Log the updated items array to the console
-  console.log(items);
+// Populating the list with items when the page loads
+populateList(items, itemsList);
 
-  // Reset the form for the next input
-  this.reset();
+// Reset the form for the next input
+this.reset();
+}
+
+// Function to populate the list with items
+function populateList(plates = [], platesList){
+  // Set the HTML content of the list element by mapping through the 'plates' array
+  platesList.innerHTML = plates.map((plate, i) => {
+    return `
+    <li>
+    <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked': ''}>
+    <label for="item${i}">${plate.text}</label>
+    </li>
+    `;
+  }).join('');
 }
 
 // Adding an event listener to the form, calling addItem function on submit
