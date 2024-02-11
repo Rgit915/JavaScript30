@@ -8,7 +8,7 @@ const items = JSON.parse(localStorage.getItem('items')) || [];
 
 
 // Function to add a new item when the form is submitted
-function addItem(e){
+function addItem(e) {
   // Prevent the default form submission behavior
   e.preventDefault();
 
@@ -24,23 +24,19 @@ function addItem(e){
   // Add the new item to the items array
   items.push(item);
 
-// Populating the list with items when the page loads
-populateList(items, itemsList);
+  updateItems();
 
-// Save the 'items' array to local storage after converting it to a JSON string
-localStorage.setItem('items', JSON.stringify(items));
-
-// Reset the form for the next input
-this.reset();
+  // Reset the form for the next input
+  this.reset();
 }
 
 // Function to populate the list with items
-function populateList(plates = [], platesList){
+function populateList(plates = [], platesList) {
   // Set the HTML content of the list element by mapping through the 'plates' array
   platesList.innerHTML = plates.map((plate, i) => {
     return `
     <li>
-    <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked': ''}>
+    <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : ''}>
     <label for="item${i}">${plate.text}</label>
     </li>
     `;
@@ -60,6 +56,12 @@ function toggleDone(e) {
   // Toggle the 'done' property of the corresponding item in the items array
   items[index].done = !items[index].done;
 
+  updateItems();
+
+}
+
+// Function to update local storage and repopulate the list
+function updateItems() {
   // Update local storage with the modified items array
   localStorage.setItem('items', JSON.stringify(items));
 
