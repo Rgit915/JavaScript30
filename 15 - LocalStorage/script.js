@@ -71,6 +71,11 @@ function toggleCheck() {
 
   // Update local storage and repopulate the list
   updateItems();
+
+  // Change the text content of the check/uncheck button based on the current state
+  const checkButton = document.getElementById('checkUncheckButton');
+  checkButton.textContent = areAllChecked ? 'Check All' : 'Uncheck All';
+
 }
 
 // Function to delete checked items
