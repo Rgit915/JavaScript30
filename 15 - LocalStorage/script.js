@@ -60,6 +60,19 @@ function toggleDone(e) {
 
 }
 
+
+// Function to check/uncheck all items
+function toggleCheck() {
+  const areAllChecked = items.every(item => item.done);
+
+  items.forEach(item => {
+    item.done = !areAllChecked;
+  });
+
+  // Update local storage and repopulate the list
+  updateItems();
+}
+
 // Function to update local storage and repopulate the list
 function updateItems() {
   // Update local storage with the modified items array
