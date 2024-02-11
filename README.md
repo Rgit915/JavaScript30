@@ -18,6 +18,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 12: Key Sequence Detection( KONAMI CODE)](#day-12-key-sequence-detection)
 - [Day 13: Slide in on Scroll](#day-13-slide-in-on-scroll)
 - [Day 14: JavaScript References VS Copy](#day-14-javascript-references-vs-copy)
+- [Day 15: LocalStorage and Event Delegations](#day-15-localstorage-and-event-delegation)
 
 ## Day 1: Drum Kit
 
@@ -113,3 +114,14 @@ The examples cover copying arrays using various methods to create copies, emphas
 For better interactivity, users can copy and try the provided code snippets on the console. Additionally, a script is included to facilitate running the examples, enhancing the learning experience.
 
 ![Screenshot of JS References ](https://github.com/Rgit915/JavaScript30/blob/master/14%20-%20JavaScript%20References%20VS%20Copying/JS-Reference.png)
+
+## Day 15: LocalStorage and Event Delegation
+
+**Description:**
+This project demonstrates the effective utilization of Local Storage for storing and retrieving data, ensuring persistent storage even after page reloads. By leveraging the capabilities of Local Storage, the application provides a seamless user experience with retained data.
+
+Furthermore, the project introduces the concept of event delegation. Through this technique, events are efficiently handled by designating a common ancestor to listen for events on multiple child elements. This approach enhances the maintainability and scalability of event handling within the application.
+
+Additionally, the project features functionality to check/uncheck all items at once and delete checked items. These added capabilities contribute to the project's versatility and user-friendly design.
+
+![Screenshot of JS localStorage ](https://github.com/Rgit915/JavaScript30/tree/master/15%20-%20LocalStorage/localStorage.png)
