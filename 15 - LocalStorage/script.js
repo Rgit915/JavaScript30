@@ -4,7 +4,7 @@ const addItems = document.querySelector('.add-items');
 const itemsList = document.querySelector('.plates');
 
 // Retrieve 'items' from local storage and parse as JSON, or initialize an empty array if no items are found
-const items = JSON.parse(localStorage.getItem('items')) || [];
+let items = JSON.parse(localStorage.getItem('items')) || [];
 
 
 // Function to add a new item when the form is submitted
@@ -72,6 +72,16 @@ function toggleCheck() {
   // Update local storage and repopulate the list
   updateItems();
 }
+
+// Function to delete checked items
+function deleteChecked() {
+  // Filter out checked items
+  items = items.filter(item => !item.done);
+
+  // Update local storage and repopulate the list
+  updateItems();
+}
+
 
 // Function to update local storage and repopulate the list
 function updateItems() {
