@@ -2,8 +2,10 @@
 const addItems = document.querySelector('.add-items');
 // Selecting the element with the class 'plates' to display the items
 const itemsList = document.querySelector('.plates');
-// Array to store the items
-const items = [];
+
+// Retrieve 'items' from local storage and parse as JSON, or initialize an empty array if no items are found
+const items = JSON.parse(localStorage.getItem('items')) || [];
+
 
 // Function to add a new item when the form is submitted
 function addItem(e){
@@ -25,6 +27,9 @@ function addItem(e){
 // Populating the list with items when the page loads
 populateList(items, itemsList);
 
+// Save the 'items' array to local storage after converting it to a JSON string
+localStorage.setItem('items', JSON.stringify(items));
+
 // Reset the form for the next input
 this.reset();
 }
@@ -44,3 +49,6 @@ function populateList(plates = [], platesList){
 
 // Adding an event listener to the form, calling addItem function on submit
 addItems.addEventListener('submit', addItem);
+
+// Populate the list with items when the page loads
+populateList(items, itemsList);
