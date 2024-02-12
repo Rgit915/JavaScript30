@@ -19,6 +19,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 13: Slide in on Scroll](#day-13-slide-in-on-scroll)
 - [Day 14: JavaScript References VS Copy](#day-14-javascript-references-vs-copy)
 - [Day 15: LocalStorage and Event Delegations](#day-15-localstorage-and-event-delegation)
+- [Day 16: Mouse Move Shadow](#day-16-mouse-move-shadow)
 
 ## Day 1: Drum Kit
 
@@ -125,3 +126,10 @@ Furthermore, the project introduces the concept of event delegation. Through thi
 Additionally, the project features functionality to check/uncheck all items at once and delete checked items. These added capabilities contribute to the project's versatility and user-friendly design.
 
 ![Screenshot of JS localStorage ](https://github.com/Rgit915/JavaScript30/tree/master/15%20-%20LocalStorage/localStorage.png)
+
+## Day 16: Mouse Move Shadow
+
+**Description:**
+The project creates a dynamic text-shadow effect on an HTML element, in response to mouse movement. The text-shadow effect changes dynamically based on the mouse position within the specified element. Comprising multiple layers with distinct offsets and colors, the text shadow produces a visually appealing and dynamic effect.
+
+![Screenshot of Mouse Move Shadow ](https://github.com/Rgit915/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow/text-shadow.png)
