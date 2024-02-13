@@ -20,6 +20,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 14: JavaScript References VS Copy](#day-14-javascript-references-vs-copy)
 - [Day 15: LocalStorage and Event Delegations](#day-15-localstorage-and-event-delegation)
 - [Day 16: Mouse Move Shadow](#day-16-mouse-move-shadow)
+- [Day 17: Sort Without Articles](#day-17-sort-without-articles)
 
 ## Day 1: Drum Kit
 
@@ -125,11 +126,18 @@ Furthermore, the project introduces the concept of event delegation. Through thi
 
 Additionally, the project features functionality to check/uncheck all items at once and delete checked items. These added capabilities contribute to the project's versatility and user-friendly design.
 
-![Screenshot of JS localStorage ](https://github.com/Rgit915/JavaScript30/tree/master/15%20-%20LocalStorage/localStorage.png)
+![Screenshot of JS localStorage ](https://github.com/Rgit915/JavaScript30/blob/master/15%20-%20LocalStorage/localStorage.png)
 
 ## Day 16: Mouse Move Shadow
 
 **Description:**
 The project creates a dynamic text-shadow effect on an HTML element, in response to mouse movement. The text-shadow effect changes dynamically based on the mouse position within the specified element. Comprising multiple layers with distinct offsets and colors, the text shadow produces a visually appealing and dynamic effect.
 
-![Screenshot of Mouse Move Shadow ](https://github.com/Rgit915/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow/text-shadow.png)
+![Screenshot of Mouse Move Shadow ](https://github.com/Rgit915/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/text-shadow.png)
+
+## Day 17: Sort Without Articles
+
+**Description:**
+This challenge demonstrates how to sort a given array of band names by removing leading articles. The sorted band names are dynamically displayed on an HTML page as an ordered list. This implementation improves the user experience by organizing the band names without considering leading articles.
+
+![Screenshot sorted list without Articles ](https://github.com/Rgit915/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles/sort-without-articles.png)
