@@ -149,4 +149,4 @@ This challenge demonstrates how to sort a given array of band names by removing 
 Discover the total time for your video playlist effortlessly! Simply scroll through and view the total hours, minutes, and seconds for the entire collection. This user-friendly project blends functionality and style .Thanks to the 'reduce' function, it efficiently calculates the combined time, making it a smart and engaging way to explore your videos.
 
 
-![Screenshot adding times ](https://github.com/Rgit915/JavaScript30/blob/master/18%20-%20Adding%20Up%20Times%20with%20Reduce/add-videos.png)
+![Screenshot adding times ](https://github.com/Rgit915/JavaScript30/blob/master/18%20-%20Adding%20Up%20Times%20with%20Reduce/assets/add-videos.png)
