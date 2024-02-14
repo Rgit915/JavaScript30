@@ -9,6 +9,9 @@ const seconds = timeNodes
   })
   .reduce((total, videoSeconds) => total + videoSeconds);
 
+// Function to calculate and display total hours, minutes, and seconds
+function displayTotalTime() {
+
 // Output calculated hours, minutes, and seconds
 let secondsLeft = seconds;
 const hours = Math.floor(secondsLeft / 3600);
@@ -16,4 +19,14 @@ secondsLeft = secondsLeft % 3600;
 
 const mins = Math.floor(secondsLeft / 60);
 secondsLeft = secondsLeft % 60;
-console.log(hours, mins, secondsLeft);
+
+  // Update the HTML elements with the calculated values
+  document.getElementById('hours').innerText = hours;
+  document.getElementById('minutes').innerText = mins;
+  document.getElementById('seconds').innerText = secondsLeft;
+}
+
+// Example: Call the function when the page is loaded
+document.addEventListener('DOMContentLoaded', function () {
+  displayTotalTime();
+});
