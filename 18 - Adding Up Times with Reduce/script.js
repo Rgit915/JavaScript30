@@ -7,3 +7,4 @@ const seconds = timeNodes
         const [mins, secs] = timeCode.split(':').map(parseFloat); // Split timeCode into minutes and seconds, convert to numbers
         return (mins * 60) + secs; // Calculate total seconds and return
     })
+    .reduce((total, videoSeconds) => total + videoSeconds);
