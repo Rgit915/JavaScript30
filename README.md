@@ -21,6 +21,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 15: LocalStorage and Event Delegations](#day-15-localstorage-and-event-delegation)
 - [Day 16: Mouse Move Shadow](#day-16-mouse-move-shadow)
 - [Day 17: Sort Without Articles](#day-17-sort-without-articles)
+- [Day 18: Adding Up Times with Reduce](#day-18-adding-up-times-with-reduce)
 
 ## Day 1: Drum Kit
 
@@ -140,4 +141,12 @@ The project creates a dynamic text-shadow effect on an HTML element, in response
 **Description:**
 This challenge demonstrates how to sort a given array of band names by removing leading articles. The sorted band names are dynamically displayed on an HTML page as an ordered list. This implementation improves the user experience by organizing the band names without considering leading articles.
 
-![Screenshot sorted list without Articles ](https://github.com/Rgit915/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles/sort-without-articles.png)
+![Screenshot sorted list without Articles ](https://github.com/Rgit915/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/sort-without-articles.png)
+
+## Day 18: Adding Up Times with Reduce
+
+**Description:**
+Discover the total time for your video playlist effortlessly! Simply scroll through and view the total hours, minutes, and seconds for the entire collection. This user-friendly project blends functionality and style .Thanks to the 'reduce' function, it efficiently calculates the combined time, making it a smart and engaging way to explore your videos.
+
+
+![Screenshot adding times ](https://github.com/Rgit915/JavaScript30/blob/master/18%20-%20Adding%20Up%20Times%20with%20Reduce/add-videos.png)
