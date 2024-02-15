@@ -42,10 +42,20 @@ function paintToCanvas() {
   canvas.height = height;
 
   // Use setInterval to continuously draw video frames onto the canvas
-  setInterval(() => {
+  return setInterval(() => {
     // Draw the current video frame onto the canvas
     ctx.drawImage(video, 0, 0, width, height);
   }, 16); // 16 milliseconds corresponds to approximately 60 frames per second
 }
 
+// Function to capture a photo from the video stream
+function takePhoto() {
+  // Reset the audio element's currentTime to ensure the snap sound plays from the beginning
+  snap.currentTime = 0;
+
+  // Play the snap sound
+  snap.play();
+}
 getVideo();
+// Event listener to trigger the paintToCanvas function when the video is ready to play
+video.addEventListener('canplay', paintToCanvas);
