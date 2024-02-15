@@ -45,6 +45,14 @@ function paintToCanvas() {
   return setInterval(() => {
     // Draw the current video frame onto the canvas
     ctx.drawImage(video, 0, 0, width, height);
+
+    // Get the pixel data from the canvas and apply red color effect
+    let pixels = ctx.getImageData(0, 0, width, height);
+    pixels = redEffect(pixels);
+
+    // Put the modified pixel data back onto the canvas
+    ctx.putImageData(pixels, 0, 0);
+
   }, 16); // 16 milliseconds corresponds to approximately 60 frames per second
 }
 
@@ -71,6 +79,17 @@ link.innerHTML = `<img src="${data}" alt="photo" />`;
 strip.insertBefore(link, strip.firstChild);
 
 }
+
+// Function to apply a red color effect to pixel data
+function redEffect(pixels) {
+  for(let i=0; i < pixels.data.length; i+=4){
+    pixels.data[i + 0] = pixels.data[i + 0] + 100; //Red
+    pixels.data[i + 1] = pixels.data[i + 1] -  50; //Green
+    pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //Blue
+  }
+  return pixels
+}
+
 getVideo();
 // Event listener to trigger the paintToCanvas function when the video is ready to play
 video.addEventListener('canplay', paintToCanvas);
