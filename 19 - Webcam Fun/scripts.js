@@ -31,4 +31,21 @@ function getVideo() {
 }
 }
 
+// Function to paint video frames onto the canvas
+function paintToCanvas() {
+  // Get the width and height of the video element
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+
+  // Set the canvas dimensions to match the video dimensions
+  canvas.width = width;
+  canvas.height = height;
+
+  // Use setInterval to continuously draw video frames onto the canvas
+  setInterval(() => {
+    // Draw the current video frame onto the canvas
+    ctx.drawImage(video, 0, 0, width, height);
+  }, 16); // 16 milliseconds corresponds to approximately 60 frames per second
+}
+
 getVideo();
