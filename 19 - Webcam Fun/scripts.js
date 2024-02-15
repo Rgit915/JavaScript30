@@ -55,6 +55,21 @@ function takePhoto() {
 
   // Play the snap sound
   snap.play();
+
+  // Capture the current canvas state as a base64-encoded data URL (JPEG format)
+const data = canvas.toDataURL('image/jpeg');
+
+// Create a new anchor element for downloading the captured photo
+const link = document.createElement('a');
+link.href = data;
+link.setAttribute('download', 'handsome');
+
+// Create an image element inside the anchor with the captured photo
+link.innerHTML = `<img src="${data}" alt="photo" />`;
+
+// Insert the anchor element with the photo into the beginning of the strip container
+strip.insertBefore(link, strip.firstChild);
+
 }
 getVideo();
 // Event listener to trigger the paintToCanvas function when the video is ready to play
