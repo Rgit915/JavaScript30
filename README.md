@@ -150,3 +150,21 @@ Discover the total time for your video playlist effortlessly! Simply scroll thro
 
 
 ![Screenshot adding times ](https://github.com/Rgit915/JavaScript30/blob/master/18%20-%20Adding%20Up%20Times%20with%20Reduce/assets/add-videos.png)
+
+## Day 19: Webcam Fun
+
+**Description:**
+
+In Day 19 of the coding challenge, we explored creating a simple webcam application with JavaScript. The primary focus was on accessing the user's webcam, displaying video frames on a canvas, and applying various visual effects.
+
+Key Features:
+- Utilized the `navigator.mediaDevices.getUserMedia` API to access the user's webcam.
+- Implemented functions to continuously draw video frames on a canvas using `setInterval`.
+- Added functionality to capture photos with a snap sound and create download links.
+- Introduced visual effects such as red color adjustment, RGB split, and a green screen effect.
+- Addressed optimization advice for multiple readback operations using `getImageData`.
+
+This project allowed us to experiment with real-time video manipulation using basic HTML, CSS, and JavaScript, providing a hands-on introduction to webcam interactions and image processing techniques.
+
+
+![Screenshot webcam fun ](https://github.com/Rgit915/JavaScript30/blob/master/19%20-%20Webcam%20Fun/webcam-fun.png)
