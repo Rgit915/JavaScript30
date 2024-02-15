@@ -10,13 +10,25 @@ const snap = document.querySelector('.snap');     // Audio element for camera sn
 
 // Function to get access to the user's webcam
 function getVideo() {
+ // Check if the browser supports the necessary APIs
+ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  // Access the user's webcam with video-only, no audio
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
-    .then(localMediaStream => {
-      // Log the media stream object to the console
-      console.log(localMediaStream);
-})
-    .catch(err => {
+    .then((stream) => {
+      // Assign the stream to the video element as the source
+      video.srcObject = stream;
+
+      // Play the video
+      video.play();
+    })
+    .catch((err) => {
       // Log any errors that occur while trying to access the webcam
       console.error('Error accessing webcam:', err);
     });
+} else {
+  // Browser doesn't support getUserMedia
+  console.error('getUserMedia is not supported in this browser');
 }
+}
+
+getVideo();
