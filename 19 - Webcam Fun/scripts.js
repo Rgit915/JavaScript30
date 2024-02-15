@@ -10,25 +10,25 @@ const snap = document.querySelector('.snap');     // Audio element for camera sn
 
 // Function to get access to the user's webcam
 function getVideo() {
- // Check if the browser supports the necessary APIs
- if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  // Access the user's webcam with video-only, no audio
-  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
-    .then((stream) => {
-      // Assign the stream to the video element as the source
-      video.srcObject = stream;
+  // Check if the browser supports the necessary APIs
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Access the user's webcam with video-only, no audio
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+      .then((stream) => {
+        // Assign the stream to the video element as the source
+        video.srcObject = stream;
 
-      // Play the video
-      video.play();
-    })
-    .catch((err) => {
-      // Log any errors that occur while trying to access the webcam
-      console.error('Error accessing webcam:', err);
-    });
-} else {
-  // Browser doesn't support getUserMedia
-  console.error('getUserMedia is not supported in this browser');
-}
+        // Play the video
+        video.play();
+      })
+      .catch((err) => {
+        // Log any errors that occur while trying to access the webcam
+        console.error('Error accessing webcam:', err);
+      });
+  } else {
+    // Browser doesn't support getUserMedia
+    console.error('getUserMedia is not supported in this browser');
+  }
 }
 
 // Function to paint video frames onto the canvas
@@ -48,7 +48,13 @@ function paintToCanvas() {
 
     // Get the pixel data from the canvas and apply red color effect
     let pixels = ctx.getImageData(0, 0, width, height);
-    pixels = redEffect(pixels);
+    //pixels = redEffect(pixels);
+
+    // Apply RGB split effect to pixel data
+    pixels = rbgSplit(pixels);
+
+    // Set global alpha for a ghosting effect
+    ctx.globalAlpha = 0.8;
 
     // Put the modified pixel data back onto the canvas
     ctx.putImageData(pixels, 0, 0);
@@ -65,29 +71,38 @@ function takePhoto() {
   snap.play();
 
   // Capture the current canvas state as a base64-encoded data URL (JPEG format)
-const data = canvas.toDataURL('image/jpeg');
+  const data = canvas.toDataURL('image/jpeg');
 
-// Create a new anchor element for downloading the captured photo
-const link = document.createElement('a');
-link.href = data;
-link.setAttribute('download', 'handsome');
+  // Create a new anchor element for downloading the captured photo
+  const link = document.createElement('a');
+  link.href = data;
+  link.setAttribute('download', 'handsome');
 
-// Create an image element inside the anchor with the captured photo
-link.innerHTML = `<img src="${data}" alt="photo" />`;
+  // Create an image element inside the anchor with the captured photo
+  link.innerHTML = `<img src="${data}" alt="photo" />`;
 
-// Insert the anchor element with the photo into the beginning of the strip container
-strip.insertBefore(link, strip.firstChild);
+  // Insert the anchor element with the photo into the beginning of the strip container
+  strip.insertBefore(link, strip.firstChild);
 
 }
 
 // Function to apply a red color effect to pixel data
 function redEffect(pixels) {
-  for(let i=0; i < pixels.data.length; i+=4){
+  for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i + 0] = pixels.data[i + 0] + 100; //Red
-    pixels.data[i + 1] = pixels.data[i + 1] -  50; //Green
+    pixels.data[i + 1] = pixels.data[i + 1] - 50; //Green
     pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //Blue
   }
-  return pixels
+  return pixels;
+}
+// Function to apply RGB split effect to pixel data
+function rbgSplit(pixels) {
+  for (let i = 0; i < pixels.data.length; i += 4) {
+    pixels.data[i - 150] = pixels.data[i + 0]; //Red
+    pixels.data[i + 500] = pixels.data[i + 1]; //Green
+    pixels.data[i - 550] = pixels.data[i + 2]; //Blue
+  }
+  return pixels;
 }
 
 getVideo();
