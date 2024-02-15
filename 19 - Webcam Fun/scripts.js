@@ -50,11 +50,12 @@ function paintToCanvas() {
     let pixels = ctx.getImageData(0, 0, width, height);
     //pixels = redEffect(pixels);
 
-    // Apply RGB split effect to pixel data
-    pixels = rbgSplit(pixels);
+    // // Apply RGB split effect to pixel data
+    // pixels = rbgSplit(pixels);
 
-    // Set global alpha for a ghosting effect
-    ctx.globalAlpha = 0.8;
+    // // Set global alpha for a ghosting effect
+    // ctx.globalAlpha = 0.8;
+    pixels = greenScreen(pixels);
 
     // Put the modified pixel data back onto the canvas
     ctx.putImageData(pixels, 0, 0);
@@ -102,6 +103,42 @@ function rbgSplit(pixels) {
     pixels.data[i + 500] = pixels.data[i + 1]; //Green
     pixels.data[i - 550] = pixels.data[i + 2]; //Blue
   }
+  return pixels;
+}
+
+// Function to apply green screen effect to pixel data based on input levels
+function greenScreen(pixels) {
+  // Object to store input levels for red, green, and blue
+  const levels = {};
+
+  // Get input values from RGB sliders and store them in the levels object
+  document.querySelectorAll('.rgb input').forEach((input) => {
+    levels[input.name] = input.value;
+  });
+
+  // Loop through pixel data
+  for (let i = 0; i < pixels.data.length; i += 4) {
+    // Extract individual color components and alpha from pixel data
+    red = pixels.data[i + 0];
+    green = pixels.data[i + 1];
+    blue = pixels.data[i + 2];
+    alpha = pixels.data[i + 3];
+
+    // Check if pixel color values are within the specified range
+    if (
+      red >= levels.rmin
+      && green >= levels.gmin
+      && blue >= levels.bmin
+      && red <= levels.rmax
+      && green <= levels.gmax
+      && blue <= levels.bmax
+    ) {
+      // Set alpha to 0 to make the pixel transparent
+      pixels.data[i + 3] = 0;
+    }
+  }
+
+  // Return the modified pixel data
   return pixels;
 }
 
