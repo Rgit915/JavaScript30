@@ -23,6 +23,12 @@ recognition.addEventListener('result', e => {
 
   // Display the transcribed speech in a paragraph element
   p.textContent = transcript;
+
+  // Create a new paragraph if the speech recognition result is final
+  if (e.results[0].isFinal) {
+    p = document.createElement('p');
+    words.appendChild(p);
+  }
 });
 
 // Start the speech recognition
