@@ -31,5 +31,9 @@ recognition.addEventListener('result', e => {
   }
 });
 
+// Event listener for the 'end' event, restarts speech recognition when it ends
+recognition.addEventListener('end', recognition.start);
+
+
 // Start the speech recognition
 recognition.start();
