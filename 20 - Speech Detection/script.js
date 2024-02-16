@@ -13,6 +13,10 @@ let p = document.createElement('p');
 // Select the container for displaying recognized words
 const words = document.querySelector('.words');
 words.appendChild(p);
+
+// Display an initial message
+p.textContent = 'Say something...';
+
 // Event listener for the 'result' event triggered when speech is recognized
 recognition.addEventListener('result', e => {
   // Extract and concatenate transcriptions from speech recognition results
@@ -28,7 +32,19 @@ recognition.addEventListener('result', e => {
   if (e.results[0].isFinal) {
     p = document.createElement('p');
     words.appendChild(p);
+   
   }
+  if (transcript.includes('change background color')) {
+    // Generate a random color in hexadecimal format
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+    // Change the background color of the document
+    document.body.style.backgroundColor = randomColor;
+
+    // Inform the user about the color change
+    p.textContent = `Background color changed to: ${randomColor}`;
+  }
+
 });
 
 // Event listener for the 'end' event, restarts speech recognition when it ends
