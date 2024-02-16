@@ -22,6 +22,8 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 16: Mouse Move Shadow](#day-16-mouse-move-shadow)
 - [Day 17: Sort Without Articles](#day-17-sort-without-articles)
 - [Day 18: Adding Up Times with Reduce](#day-18-adding-up-times-with-reduce)
+- [Day 19: Webcam Fun](#day-19-webcam-fun)
+- [Day 20: Speech Detection](#day-20-speech-detection)
 
 ## Day 1: Drum Kit
 
@@ -167,4 +169,12 @@ Key Features:
 This project allowed us to experiment with real-time video manipulation using basic HTML, CSS, and JavaScript, providing a hands-on introduction to webcam interactions and image processing techniques.
 
 
-![Screenshot webcam fun ](https://github.com/Rgit915/JavaScript30/blob/master/19%20-%20Webcam%20Fun/webcam-fun.png)
+![Screenshot webcam fun ](https://github.com/Rgit915/JavaScript30/blob/master/19%20-%20Webcam%20Fun/webcam-fun.jpg)
+
+## Day 20: Speech Detection
+
+**Description:**
+
+This project utilizes the SpeechRecognition API to dynamically change the background color when prompted with the phrase "change background color." Informative messages guide the user through the interaction process. Simply speak up and watch as the background transforms into a delightful random color. Enjoy a seamlessly integrated voice-controlled experience!
+
+![Screenshot speech detection ](https://github.com/Rgit915/JavaScript30/blob/master/20%20-%20Speech%20Detection/assets/say-something.png)
