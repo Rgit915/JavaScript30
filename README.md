@@ -24,6 +24,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 18: Adding Up Times with Reduce](#day-18-adding-up-times-with-reduce)
 - [Day 19: Webcam Fun](#day-19-webcam-fun)
 - [Day 20: Speech Detection](#day-20-speech-detection)
+- [Day 21: Geolocation](#day-21-geolocation)
 
 ## Day 1: Drum Kit
 
@@ -178,3 +179,13 @@ This project allowed us to experiment with real-time video manipulation using ba
 This project utilizes the SpeechRecognition API to dynamically change the background color when prompted with the phrase "change background color." Informative messages guide the user through the interaction process. Simply speak up and watch as the background transforms into a delightful random color. Enjoy a seamlessly integrated voice-controlled experience!
 
 ![Screenshot speech detection ](https://github.com/Rgit915/JavaScript30/blob/master/20%20-%20Speech%20Detection/assets/say-something.png)
+
+
+## Day 21: Geolocation
+
+**Description:**
+This project utilizes the Geolocation API to provide real-time information about the user's position, speed, and heading direction. The application includes a dynamic arrow element that visually represents the heading direction obtained from the geolocation data. In cases where heading information is not available, a default rotation value is applied to maintain a meaningful visual representation.
+
+Additionally, the user's current speed is displayed, updating dynamically as the geolocation data is received. The project includes a simulation feature for testing purposes, allowing developers to emulate geolocation data in scenarios where actual GPS signals are unavailable.
+
+![Screenshot geolocation ](https://github.com/Rgit915/JavaScript30/blob/master/21%20-%20Geolocation/geolocation.png)
