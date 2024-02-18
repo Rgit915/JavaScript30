@@ -25,6 +25,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 19: Webcam Fun](#day-19-webcam-fun)
 - [Day 20: Speech Detection](#day-20-speech-detection)
 - [Day 21: Geolocation](#day-21-geolocation)
+- [Day 22: Follow Along Link Highlighter](#day-22-follow-along-link-highlighter)
 
 ## Day 1: Drum Kit
 
@@ -189,3 +190,11 @@ This project utilizes the Geolocation API to provide real-time information about
 Additionally, the user's current speed is displayed, updating dynamically as the geolocation data is received. The project includes a simulation feature for testing purposes, allowing developers to emulate geolocation data in scenarios where actual GPS signals are unavailable.
 
 ![Screenshot geolocation ](https://github.com/Rgit915/JavaScript30/blob/master/21%20-%20Geolocation/geolocation.png)
+
+
+## Day 22: Follow Along Link Highlighter
+
+**Description:**
+This project enhances the user experience by implementing a dynamic link highlighting feature. It involves selecting all anchor elements on the page, creating a dynamic highlight using a span element, and adjusting its size and position based on the dimensions and location of the hovered link. The code also considers page scrolling when calculating link coordinates, resulting in an improved visual highlight for links on mouse hover.
+
+![Screenshot Link highlighter ](https://github.com/Rgit915/JavaScript30/blob/master/22%20-%20Follow%20Along%20Link%20Highlighter/link-highlighter.png)
