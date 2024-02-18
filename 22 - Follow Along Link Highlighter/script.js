@@ -11,6 +11,11 @@ function highlightLink() {
   // Get position and dimensions of the hovered link
   const linkCoords = this.getBoundingClientRect();
   console.log(linkCoords); // Log link coordinates for debugging
+
+  // Set the width, height, and position of the highlight span
+  highlight.style.width = `${linkCoords.width}px`;
+  highlight.style.height = `${linkCoords.height}px`;
+  highlight.style.transform = `translate(${linkCoords.left}px, ${linkCoords.top}px)`;
 }
 
 // Add event listener to each link for highlighting on mouseenter
