@@ -26,6 +26,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 20: Speech Detection](#day-20-speech-detection)
 - [Day 21: Geolocation](#day-21-geolocation)
 - [Day 22: Follow Along Link Highlighter](#day-22-follow-along-link-highlighter)
+- [Day 23: Speech Synthesis](#day-23-speech-synthesis)
 
 ## Day 1: Drum Kit
 
@@ -198,3 +199,12 @@ Additionally, the user's current speed is displayed, updating dynamically as the
 This project enhances the user experience by implementing a dynamic link highlighting feature. It involves selecting all anchor elements on the page, creating a dynamic highlight using a span element, and adjusting its size and position based on the dimensions and location of the hovered link. The code also considers page scrolling when calculating link coordinates, resulting in an improved visual highlight for links on mouse hover.
 
 ![Screenshot Link highlighter ](https://github.com/Rgit915/JavaScript30/blob/master/22%20-%20Follow%20Along%20Link%20Highlighter/link-highlighter.png)
+
+
+
+## Day 23: Speech Synthesis
+
+**Description:**
+The project is a Speech Synthesis application that allows users to customize and interact with text-to-speech output. It features voice selection, rate and pitch adjustments, and volume control. The user-friendly interface enhances the overall experience, providing dynamic control over speech synthesis parameters.
+
+![Screenshot Speech Synthesis ](https://github.com/Rgit915/JavaScript30/blob/master/23%20-%20Speech%20Synthesis/Speech-Synthesis.png)
