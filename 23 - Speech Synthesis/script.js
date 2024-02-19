@@ -23,5 +23,15 @@ function populateVoices() {
     .join('');
 }
 
+// Function to set the selected voice for speech synthesis
+function setVoice() {
+  // Find and set the voice in the SpeechSynthesisUtterance based on the selected option value
+  msg.voice = voices.find(voice => voice.name === this.value);
+}
+
 // Event listener for the 'voiceschanged' event to trigger voice population
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
+
+
+// Event listener for the 'change' event on the voices dropdown to set the selected voice
+voicesDropdown.addEventListener('change', setVoice);
