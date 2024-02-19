@@ -27,6 +27,17 @@ function populateVoices() {
 function setVoice() {
   // Find and set the voice in the SpeechSynthesisUtterance based on the selected option value
   msg.voice = voices.find(voice => voice.name === this.value);
+  toggle();
+}
+// Function to toggle speech synthesis, canceling the current speech and optionally restarting
+function toggle(startOver = true) {
+  // Cancel any ongoing speech synthesis
+  speechSynthesis.cancel();
+
+  // If specified, initiate speech synthesis with the current SpeechSynthesisUtterance
+  if (startOver) {
+    speechSynthesis.speak(msg);
+  }
 }
 
 // Event listener for the 'voiceschanged' event to trigger voice population
