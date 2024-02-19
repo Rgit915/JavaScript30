@@ -40,9 +40,18 @@ function toggle(startOver = true) {
   }
 }
 
+// Function to set SpeechSynthesisUtterance options and trigger speech synthesis
+function setOption() {
+  msg[this.name] = this.value;
+  toggle();
+}
+
 // Event listener for the 'voiceschanged' event to trigger voice population
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
 
 
 // Event listener for the 'change' event on the voices dropdown to set the selected voice
 voicesDropdown.addEventListener('change', setVoice);
+
+// Event listeners for changes in options to update SpeechSynthesisUtterance and trigger speech synthesis
+options.forEach(option => option.addEventListener('change', setOption));
