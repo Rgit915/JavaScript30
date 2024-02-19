@@ -44,6 +44,11 @@ function toggle(startOver = true) {
 // Function to set SpeechSynthesisUtterance options and trigger speech synthesis
 function setOption() {
   msg[this.name] = this.value;
+  // Check if the changed option is volume and update the speechSynthesis volume
+  if (this.name === 'volume') {
+    speechSynthesis.volume = this.value;
+  }
+
   toggle();
 }
 
