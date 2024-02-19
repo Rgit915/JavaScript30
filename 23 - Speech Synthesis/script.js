@@ -55,3 +55,9 @@ voicesDropdown.addEventListener('change', setVoice);
 
 // Event listeners for changes in options to update SpeechSynthesisUtterance and trigger speech synthesis
 options.forEach(option => option.addEventListener('change', setOption));
+
+// Event listener for the speak button to toggle speech synthesis on click
+speakButton.addEventListener('click', toggle);
+
+// Event listener for the stop button to toggle speech synthesis and cancel speech on click
+stopButton.addEventListener('click', () => toggle(false));
