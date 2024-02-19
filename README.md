@@ -27,6 +27,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 21: Geolocation](#day-21-geolocation)
 - [Day 22: Follow Along Link Highlighter](#day-22-follow-along-link-highlighter)
 - [Day 23: Speech Synthesis](#day-23-speech-synthesis)
+- [Day 24: Sticky Nav](#day-24-sticky-nav)
 
 ## Day 1: Drum Kit
 
@@ -208,3 +209,11 @@ This project enhances the user experience by implementing a dynamic link highlig
 The project is a Speech Synthesis application that allows users to customize and interact with text-to-speech output. It features voice selection, rate and pitch adjustments, and volume control. The user-friendly interface enhances the overall experience, providing dynamic control over speech synthesis parameters.
 
 ![Screenshot Speech Synthesis ](https://github.com/Rgit915/JavaScript30/blob/master/23%20-%20Speech%20Synthesis/Speech-Synthesis.png)
+
+
+## Day 24: Sticky Nav
+
+**Description:**
+This project features a sticky navigation bar that becomes fixed at the top of the page during scrolling. The navigation includes an animated logo that dynamically adjusts its size when fixed, creating an engaging visual effect. The styling adjusts dynamically, providing an enhanced user experience as the page is scrolled.
+
+![Screenshot Sticky Nav ](https://github.com/Rgit915/JavaScript30/blob/master/24%20-%20Sticky%20Nav/Sticky-Nav.png)
