@@ -19,6 +19,7 @@ function populateVoices() {
 
   // Populate the dropdown options with voice names and languages
   voicesDropdown.innerHTML = voices
+  .filter(voice => voice.lang.includes('en'))
     .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
     .join('');
 }
