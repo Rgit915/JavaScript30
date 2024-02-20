@@ -10,8 +10,9 @@ function handleEnter() {
   // Adding 'trigger-enter' class to the current list item
   this.classList.add('trigger-enter');
 
-  // Adding 'trigger-enter-active' class after a delay to trigger the dropdown effect
-  setTimeout(() => this.classList.add('trigger-enter-active'), 150);
+ // Using setTimeout to add 'trigger-enter-active' class only if 'trigger-enter' class is present after 150 milliseconds
+setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+
  // Adding 'open' class to the background element to reveal the dropdown
 background.classList.add('open');
 
