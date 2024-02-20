@@ -28,6 +28,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 22: Follow Along Link Highlighter](#day-22-follow-along-link-highlighter)
 - [Day 23: Speech Synthesis](#day-23-speech-synthesis)
 - [Day 24: Sticky Nav](#day-24-sticky-nav)
+- [Day 25: Understanding Event Capture, Propagation, Bubbling and Once](#day-25-understanding-event-capture-propagation-bubbling-and-once)
 
 ## Day 1: Drum Kit
 
@@ -217,3 +218,11 @@ The project is a Speech Synthesis application that allows users to customize and
 This project features a sticky navigation bar that becomes fixed at the top of the page during scrolling. The navigation includes an animated logo that dynamically adjusts its size when fixed, creating an engaging visual effect. The styling adjusts dynamically, providing an enhanced user experience as the page is scrolled.
 
 ![Screenshot Sticky Nav ](https://github.com/Rgit915/JavaScript30/blob/master/24%20-%20Sticky%20Nav/Sticky-Nav.png)
+
+
+## Day 25: Understanding Event Capture, Propagation, Bubbling and Once
+
+**Description:**
+This project illustrates the concepts of JavaScript's event capture, propagation, bubbling, and the 'once' option. When a user clicks on a div, the script logs the classList value of the clicked div. Similarly, clicking the button logs a message. This interactive demonstration provides insight into how events are captured, propagated, and bubbled through the DOM, offering a practical understanding of these fundamental JavaScript concepts.
+
+![Screenshot event capture ](https://github.com/Rgit915/JavaScript30/blob/master/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/Event-Capture-Propagation-Bubbling-and-Once.png)
