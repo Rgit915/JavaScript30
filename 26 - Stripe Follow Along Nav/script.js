@@ -16,7 +16,7 @@ function handleEnter() {
 
 // Function to handle mouse leave event
 function handleLeave() {
-  console.log("Leave!");
+  this.classList.remove('trigger-enter','trigger-enter-active');
 }
 
 // Adding event listeners for mouse enter and leave to each list item
