@@ -13,3 +13,9 @@ slider.addEventListener('mousedown', (e) => {
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
 });
+
+// Event listener for mouse leave on the slider
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
