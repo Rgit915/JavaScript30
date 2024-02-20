@@ -29,7 +29,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 23: Speech Synthesis](#day-23-speech-synthesis)
 - [Day 24: Sticky Nav](#day-24-sticky-nav)
 - [Day 25: Understanding Event Capture, Propagation, Bubbling and Once](#day-25-understanding-event-capture-propagation-bubbling-and-once)
-
+- [Day 26: Stripe Follow Along Nav](#day-26-stripe-follow-along-nav)
 ## Day 1: Drum Kit
 
 **Description:** Build a virtual drum kit that plays different sounds for each key press.
@@ -226,3 +226,12 @@ This project features a sticky navigation bar that becomes fixed at the top of t
 This project illustrates the concepts of JavaScript's event capture, propagation, bubbling, and the 'once' option. When a user clicks on a div, the script logs the classList value of the clicked div. Similarly, clicking the button logs a message. This interactive demonstration provides insight into how events are captured, propagated, and bubbled through the DOM, offering a practical understanding of these fundamental JavaScript concepts.
 
 ![Screenshot event capture ](https://github.com/Rgit915/JavaScript30/blob/master/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/Event-Capture-Propagation-Bubbling-and-Once.png)
+
+
+## Day 26: Stripe Follow Along Nav
+
+**Description:**
+This project enhances a navigation menu by adding a dropdown effect. It attaches event listeners for mouse enter and leave to specific list items. On hover, it dynamically adds classes to initiate a dropdown animation, revealing the dropdown content and adjusting the background accordingly. On mouse leave, it removes the added classes, hiding the dropdown and restoring the menu to its initial state.
+
+
+![Screenshot stripe follow along nav ](https://github.com/Rgit915/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/Stripe-Nav.png)
