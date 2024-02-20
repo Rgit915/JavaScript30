@@ -12,11 +12,37 @@ function handleEnter() {
 
   // Adding 'trigger-enter-active' class after a delay to trigger the dropdown effect
   setTimeout(() => this.classList.add('trigger-enter-active'), 150);
+ // Adding 'open' class to the background element to reveal the dropdown
+background.classList.add('open');
+
+// Selecting the dropdown element within the current list item
+const dropdown = this.querySelector('.dropdown');
+
+// Getting the bounding rectangles for the dropdown, navigation, and background elements
+const dropdownCoords = dropdown.getBoundingClientRect();
+const navCoords = nav.getBoundingClientRect();
+
+// Calculating the coordinates for the dropdown relative to the navigation element
+const coords = {
+  height: dropdownCoords.height,
+  width: dropdownCoords.width,
+  top: dropdownCoords.top - navCoords.top,
+  left: dropdownCoords.left - navCoords.left,
+};
+
+// Setting the width and height of the background element to match the dropdown
+background.style.setProperty('width', `${coords.width}px`);
+background.style.setProperty('height', `${coords.height}px`);
+
+// Adjusting the position of the background to align with the dropdown
+background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+
 }
 
 // Function to handle mouse leave event
 function handleLeave() {
-  this.classList.remove('trigger-enter','trigger-enter-active');
+  this.classList.remove('trigger-enter', 'trigger-enter-active');
+  background.classList.remove('open');
 }
 
 // Adding event listeners for mouse enter and leave to each list item
