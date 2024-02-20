@@ -25,3 +25,17 @@ slider.addEventListener('mouseup', () => {
   isDown = false;
   slider.classList.remove('active');
 });
+
+// Event listener for mouse move on the slider
+slider.addEventListener('mousemove', (e) => {
+  // Exiting early if the mouse button is not down
+  if (!isDown) return;
+
+  // Preventing default behavior of the mouse move event
+  e.preventDefault();
+
+  // Calculating the new scroll position based on the mouse movement
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3;
+  slider.scrollLeft = scrollLeft - walk;
+});
