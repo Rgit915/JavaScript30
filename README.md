@@ -30,6 +30,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 24: Sticky Nav](#day-24-sticky-nav)
 - [Day 25: Understanding Event Capture, Propagation, Bubbling and Once](#day-25-understanding-event-capture-propagation-bubbling-and-once)
 - [Day 26: Stripe Follow Along Nav](#day-26-stripe-follow-along-nav)
+- [Day 27: Click and Drag](#day-27-click-and-drag)
 ## Day 1: Drum Kit
 
 **Description:** Build a virtual drum kit that plays different sounds for each key press.
@@ -235,3 +236,10 @@ This project enhances a navigation menu by adding a dropdown effect. It attaches
 
 
 ![Screenshot stripe follow along nav ](https://github.com/Rgit915/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/Stripe-Nav.png)
+
+## Day 27: Click and Drag
+
+**Description:**
+This project introduces a horizontal slider functionality for a set of items, allowing users to seamlessly navigate by clicking, dragging, and releasing. The implementation includes a smooth scrolling effect, enhancing the overall user experience.
+
+![Screenshot Click and Drag ](https://github.com/Rgit915/JavaScript30/blob/master/27%20-%20Click%20and%20Drag/Click-and-Drag.png)
