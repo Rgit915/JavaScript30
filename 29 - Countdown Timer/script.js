@@ -1,6 +1,8 @@
 // Variable to store the interval ID for the countdown timer
 let countdown;
 let originalSeconds;
+let audio;
+
 // Selecting the DOM element with the class 'display__time-left'
 const timerDisplay = document.querySelector('.display__time-left');
 // Selecting the DOM element with the class 'display__end-time'
@@ -8,6 +10,7 @@ const endTime = document.querySelector('.display__end-time');
 // Selecting all buttons with the 'data-time' attribute
 const buttons = document.querySelectorAll('[data-time]');
 const myBar = document.querySelector('#myBar');
+const myProgress = document.querySelector('#myProgress')
 
 // Function to initiate a countdown timer
 function timer(seconds) {
@@ -29,7 +32,7 @@ function timer(seconds) {
     const secondsLeft = Math.round((then - Date.now()) / 1000);
 
     // Clearing the interval and exiting the function if time is up
-    if (secondsLeft <= 0) {
+    if (secondsLeft < 0) {
       clearInterval(countdown);
       return;
     }
@@ -38,6 +41,11 @@ function timer(seconds) {
     displayTimeLeft(secondsLeft);
 
   }, 1000);
+
+  // Show the progress bar
+  myProgress.style.display = 'block';
+
+  audio = new Audio('./assets/clock-countdown-bleeps.wav');
 }
 // Function to display time left in minutes and seconds
 function displayTimeLeft(seconds) {
@@ -60,6 +68,11 @@ function displayTimeLeft(seconds) {
 
   // Updating the progress bar width from left to right
   myBar.style.width = `${progress}%`;
+
+  // Play a sound when the timer is completed
+  if (seconds === 0) {
+    playSound();
+  }
 }
 // Function to display the end time based on a given timestamp
 function displayEndTime(timestamp) {
@@ -83,10 +96,16 @@ function startTimer() {
   timer(seconds);
 }
 
+
+// Function to play the sound
+function playSound() {
+  audio.play();
+}
+
 // Adding click event listeners to all buttons to start the timer
 buttons.forEach(button => button.addEventListener('click', startTimer));
 // Adding a submit event listener to the 'customForm' form
-document.customForm.addEventListener('submit', function (e) {
+document.customForm.addEventListener('submit', function(e) {
   // Preventing the default form submission behavior
   e.preventDefault();
 
