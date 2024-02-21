@@ -1,3 +1,33 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
+
+// Variable to keep track of the last hole
+let lastHole;
+
+// Function to generate a random time between min and max values
+function randomTime(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+
+// Function to randomly select a hole from the provided array
+function randomHole(holes) {
+  // Generate a random index within the range of the holes array
+  const idx = Math.floor(Math.random() * holes.length);
+
+  // Select a hole using the random index
+  const hole = holes[idx];
+
+  // Check if the selected hole is the same as the last one
+  if (hole === lastHole) {
+    console.log("Same hole as last time");
+    // Recursively call the function to get a different hole
+    return randomHole(holes);
+  }
+
+  // Update the lastHole variable with the current hole
+  lastHole = hole;
+
+  // Return the selected hole
+  return hole;
+}
