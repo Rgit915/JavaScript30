@@ -32,6 +32,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 26: Stripe Follow Along Nav](#day-26-stripe-follow-along-nav)
 - [Day 27: Click and Drag](#day-27-click-and-drag)
 - [Day 28: Video Speed Controller](#day-28-video-speed-controller)
+- [Day 29: Countdown Timer](#day-29-countdown-timer)
 
 ## Day 1: Drum Kit
 
@@ -251,3 +252,10 @@ This project introduces a horizontal slider functionality for a set of items, al
 This project features an interactive speed control for video playback. Users can adjust the playback speed by moving their mouse within a designated control area. The visual representation dynamically updates, providing real-time feedback on the chosen speed.
 
 ![Screenshot Video Speed Cotroller ](https://github.com/Rgit915/JavaScript30/blob/master/28%20-%20Video%20Speed%20Controller/Video-Speed-Controller.png)
+
+
+## Day 29: Countdown Timer
+**Description:**
+This project implements a customizable countdown timer with a visually appealing progress bar. Users can set a specific time duration, and the timer dynamically displays the remaining time in minutes and seconds. The progress bar, designed with a gradient effect, smoothly fills from left to right as the timer counts down. A sound alert is triggered upon timer completion. The interface is designed to show the progress bar only when the timer is set, ensuring a clean and user-friendly experience.
+
+![Screenshot Countdown Timer](https://github.com/Rgit915/JavaScript30/blob/master/29%20-%20Countdown%20Timer)
