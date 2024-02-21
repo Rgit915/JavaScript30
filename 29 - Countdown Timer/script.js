@@ -4,9 +4,14 @@ let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 // Selecting the DOM element with the class 'display__end-time'
 const endTime = document.querySelector('.display__end-time');
+// Selecting all buttons with the 'data-time' attribute
+const buttons = document.querySelectorAll('[data-time]');
 
 // Function to initiate a countdown timer
 function timer(seconds) {
+  // clear any existing timers
+  clearInterval(countdown);
+
   // Calculating the current timestamp and the target timestamp
   const now = Date.now();
   const then = now + seconds * 1000;
@@ -59,3 +64,15 @@ function displayEndTime(timestamp) {
   // Formatting the end time display with a 12-hour clock and leading zero for single-digit minutes
   endTime.textContent = `Be Back at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
+
+// Function to start the timer based on the clicked button's data-time attribute
+function startTimer() {
+  // Parsing the 'data-time' attribute value to get the number of seconds
+  const seconds = parseInt(this.dataset.time);
+
+  // Calling the timer function with the specified number of seconds
+  timer(seconds);
+}
+
+// Adding click event listeners to all buttons to start the timer
+buttons.forEach(button => button.addEventListener('click', startTimer));
