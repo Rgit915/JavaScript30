@@ -1,14 +1,17 @@
 // Variable to store the interval ID for the countdown timer
 let countdown;
+let originalSeconds;
 // Selecting the DOM element with the class 'display__time-left'
 const timerDisplay = document.querySelector('.display__time-left');
 // Selecting the DOM element with the class 'display__end-time'
 const endTime = document.querySelector('.display__end-time');
 // Selecting all buttons with the 'data-time' attribute
 const buttons = document.querySelectorAll('[data-time]');
+const myBar = document.querySelector('#myBar');
 
 // Function to initiate a countdown timer
 function timer(seconds) {
+  originalSeconds = seconds;
   // clear any existing timers
   clearInterval(countdown);
 
@@ -38,6 +41,7 @@ function timer(seconds) {
 }
 // Function to display time left in minutes and seconds
 function displayTimeLeft(seconds) {
+
   // Calculating minutes and remaining seconds
   const minutes = Math.floor(seconds / 60);
   const reminderSeconds = seconds % 60;
@@ -51,6 +55,11 @@ function displayTimeLeft(seconds) {
   // Updating the content of a DOM element with the time display
   timerDisplay.textContent = display;
 
+  // Calculating the progress percentage from 0 to 100
+  const progress = ((originalSeconds - seconds) / originalSeconds) * 100;
+
+  // Updating the progress bar width from left to right
+  myBar.style.width = `${progress}%`;
 }
 // Function to display the end time based on a given timestamp
 function displayEndTime(timestamp) {
