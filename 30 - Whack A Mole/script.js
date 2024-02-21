@@ -53,3 +53,18 @@ function peep() {
     if (!timeUp) peep();
   }, time);
 }
+
+// Function to start the game
+function startGame() {
+  // Reset the score to 0
+  scoreBoard.textContent = 0;
+
+  // Set the game state to not over
+  timeUp = false;
+
+  // Call the peep function to make a mole appear
+  peep();
+
+  // Set a timeout to end the game after 1000ms (1 second)
+  setTimeout(() => timeUp = true, 1000);
+}
