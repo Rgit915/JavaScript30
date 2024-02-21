@@ -76,3 +76,17 @@ function startTimer() {
 
 // Adding click event listeners to all buttons to start the timer
 buttons.forEach(button => button.addEventListener('click', startTimer));
+// Adding a submit event listener to the 'customForm' form
+document.customForm.addEventListener('submit', function (e) {
+  // Preventing the default form submission behavior
+  e.preventDefault();
+
+  // Extracting the value entered in the 'minutes' input field
+  const mins = this.minutes.value;
+
+  // Calling the timer function with the specified number of minutes converted to seconds
+  timer(mins * 60);
+
+  // Resetting the form after submission
+  this.reset();
+});
