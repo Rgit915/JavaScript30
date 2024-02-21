@@ -4,6 +4,7 @@ const moles = document.querySelectorAll('.mole');
 
 // Variable to keep track of the last hole
 let lastHole;
+let timeUp = false;
 
 // Function to generate a random time between min and max values
 function randomTime(min, max) {
@@ -30,4 +31,25 @@ function randomHole(holes) {
 
   // Return the selected hole
   return hole;
+}
+
+// Function to make a mole appear from a random hole for a random duration
+function peep() {
+  // Generate a random time interval between 200ms and 1000ms
+  const time = randomTime(200, 1000);
+
+  // Select a random hole using the randomHole function
+  const hole = randomHole(holes);
+
+  // Add the 'up' class to the selected hole to make the mole appear
+  hole.classList.add('up');
+
+  // Set a timeout to remove the 'up' class after the specified time
+  setTimeout(() => {
+    // Remove the 'up' class to make the mole disappear
+    hole.classList.remove('up');
+
+    // If the game is still ongoing (timeUp is false), recursively call peep to make another mole appear
+    if (!timeUp) peep();
+  }, time);
 }
