@@ -33,6 +33,7 @@ Welcome to the JavaScript30 Challenge repository! This 30-days of code challenge
 - [Day 27: Click and Drag](#day-27-click-and-drag)
 - [Day 28: Video Speed Controller](#day-28-video-speed-controller)
 - [Day 29: Countdown Timer](#day-29-countdown-timer)
+- [Day 30: Whack A Mole](#day-30-whack-a-mole)
 
 ## Day 1: Drum Kit
 
@@ -258,4 +259,10 @@ This project features an interactive speed control for video playback. Users can
 **Description:**
 This project implements a customizable countdown timer with a visually appealing progress bar. Users can set a specific time duration, and the timer dynamically displays the remaining time in minutes and seconds. The progress bar, designed with a gradient effect, smoothly fills from left to right as the timer counts down. A sound alert is triggered upon timer completion. The interface is designed to show the progress bar only when the timer is set, ensuring a clean and user-friendly experience.
 
-![Screenshot Countdown Timer](https://github.com/Rgit915/JavaScript30/blob/master/29%20-%20Countdown%20Timer)
+![Screenshot Countdown Timer](https://github.com/Rgit915/JavaScript30/blob/master/29%20-%20Countdown%20Timer/assets/Countdown-Timer.png)
+
+## Day 30: Whack A Mole
+**Description:**
+This Whack-a-Mole game project features classic gameplay where users aim to score points by clicking on appearing moles within a given time limit. It includes dynamic mole appearances, real-time scoring, and a countdown timer for added challenge. The game ends with a clear game-over message and displays the final score, offering an engaging and fast-paced experience.
+
+![Screenshot Whack-A-Mole](https://github.com/Rgit915/JavaScript30/blob/master/30%20-%20Whack%20A%20Mole/assets/Whack-A-Mole.png)
