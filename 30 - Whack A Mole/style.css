@@ -67,3 +67,49 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+.bottom{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.timer{
+  margin: auto 0;
+  padding: 20px;
+font-size: 36px;
+ color: black;
+ font-weight: 700;
+ font-family: 'Amatic SC', cursive;
+}
+
+#timer-display{
+
+  background: rgba(255,255,255,0.2);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  line-height: 1;
+}
+
+button {
+  margin: 20px 0;
+  padding: 2rem 3rem;
+  margin: 20px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  font-size: 36px;
+ color: black;
+ font-weight: 700;
+ font-family: 'Amatic SC', cursive;
+
+}
+
+#game-over {
+  display: none;
+  padding: 2rem 3rem;
+  line-height: 1;
+  font-size: 26px;
+ color: black;
+ font-weight: 400;
+}
