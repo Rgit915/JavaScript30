@@ -1,11 +1,17 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
+const timerDisplay = document.getElementById('timer-display'); // Select the timer display element
+const gameOverDisplay = document.getElementById('game-over');
+const finalScoreDisplay = document.getElementById('final-score');
+
 
 // Variable to keep track of the last hole
 let lastHole;
 let timeUp = false;
 let score = 0;
+let countdown;
+
 
 // Function to generate a random time between min and max values
 function randomTime(min, max) {
@@ -63,12 +69,47 @@ function startGame() {
   // Set the game state to not over
   timeUp = false;
   score = 0;
+  updateTimerDisplay(10);
   // Call the peep function to make a mole appear
   peep();
+  startTimer();
+  // Display the game over message and final score
+  gameOverDisplay.style.display = 'none';
 
-  // Set a timeout to end the game after 1000ms (1 second)
-  setTimeout(() => timeUp = true, 2000);
 }
+
+function startTimer() {
+  let seconds = 10; // Set the initial countdown time in seconds
+
+  countdown = setInterval(() => {
+    updateTimerDisplay(seconds); // Update the timer display
+    seconds--;
+
+    if (seconds < 0) {
+      clearInterval(countdown);
+      timeUp = true;
+      endGame(); // Add any additional logic when the timer reaches 0
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay(seconds) {
+  timerDisplay.textContent = `Time:${seconds}s`; // Update the timer display
+}
+
+function updateScoreDisplay() {
+  scoreBoard.textContent = `${score}`;
+  scoreDisplay.textContent = `Score: ${score}`;
+}
+
+function endGame() {
+  // Update the final score display
+  finalScoreDisplay.textContent = score;
+
+  // Display the game over message and final score
+  gameOverDisplay.style.display = 'block';
+}
+
 // Function to handle the "bonk" or mole whack event
 function bonk(e) {
   // Check if the click event is trusted (prevents fake clicks)
@@ -79,9 +120,7 @@ function bonk(e) {
 
   // Remove the 'up' class to make the mole disappear
   this.classList.remove('up');
-
-  // Update the score display on the scoreboard
-  scoreBoard.textContent = score;
+  updateScoreDisplay(); // Update the score display
 }
 
 // Add click event listeners to all moles, calling the bonk function on click
