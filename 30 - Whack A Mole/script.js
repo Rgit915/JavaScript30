@@ -5,6 +5,7 @@ const moles = document.querySelectorAll('.mole');
 // Variable to keep track of the last hole
 let lastHole;
 let timeUp = false;
+let score = 0;
 
 // Function to generate a random time between min and max values
 function randomTime(min, max) {
@@ -61,10 +62,27 @@ function startGame() {
 
   // Set the game state to not over
   timeUp = false;
-
+  score = 0;
   // Call the peep function to make a mole appear
   peep();
 
   // Set a timeout to end the game after 1000ms (1 second)
-  setTimeout(() => timeUp = true, 1000);
+  setTimeout(() => timeUp = true, 2000);
 }
+// Function to handle the "bonk" or mole whack event
+function bonk(e) {
+  // Check if the click event is trusted (prevents fake clicks)
+  if (!e.isTrusted) return;
+
+  // Increment the score
+  score++;
+
+  // Remove the 'up' class to make the mole disappear
+  this.classList.remove('up');
+
+  // Update the score display on the scoreboard
+  scoreBoard.textContent = score;
+}
+
+// Add click event listeners to all moles, calling the bonk function on click
+moles.forEach(mole => mole.addEventListener('click', bonk));
